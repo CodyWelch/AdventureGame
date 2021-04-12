@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class Enemy : MonoBehaviour
+public class Enemy : Interactable
 {
+    public override void Interact()
+    {
+        base.Interact();
+        // attack the enemy
+    }
 
     public NavMeshAgent agent;
 
