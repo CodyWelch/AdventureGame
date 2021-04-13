@@ -1,0 +1,406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6051140669416829903
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb3726c0da5bd9419f884b821ef7c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toFarAway:
+    title: 
+    text: This is to far away!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  inUse:
+    title: 
+    text: My life is already fairly busy.
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  questCompleted:
+    title: 
+    text: Quest {0} completed.
+    color: {r: 1, g: 0.47028917, b: 0, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  questFailed:
+    title: 
+    text: '{0} failed.'
+    color: {r: 0.6603774, g: 0, b: 0, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  taskCompleted:
+    title: 
+    text: '{0} completed.'
+    color: {r: 1, g: 0.62738365, b: 0, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  taskFailed:
+    title: 
+    text: '{0} failed.'
+    color: {r: 1, g: 0.08891893, b: 0, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  cancelQuest:
+    title: Cancel Quest
+    text: Are you sure you want to cancel the quest?
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+--- !u!114 &-4184341376833027300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e66d169d23974a4c9dd56239e2d7cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationName: Notification
+  dialogBoxName: Dialog Box
+  questWindowName: Quest
+  questSelectionWindowName: Quest Selection
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abfaaa994bbb124e8ceb26995cd12c8, type: 3}
+  m_Name: RPG Quests
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 5015038646102688880}
+  - {fileID: 5357671254470072040}
+  - {fileID: 4296032356581323039}
+  - {fileID: 8942450600187530306}
+  settings:
+  - {fileID: 702972413893301555}
+  - {fileID: -6051140669416829903}
+  - {fileID: 8069101094461139134}
+  - {fileID: -4184341376833027300}
+--- !u!114 &702972413893301555
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778d048687ebc8141954ad6b344d100f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  debugMessages: 1
+--- !u!114 &4296032356581323039
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Kill Skeletons
+  m_EditorClassIdentifier: 
+  m_QuestName: Kill Skeletons
+  m_Title: Kill Skeletons
+  m_Description: "Directly to the west there are skeletons. My scouts report that
+    their numbers have grown greatly over the past few months. If they grow to great,
+    they may find the courage to attack us!\n\nKill three of them to show who governs
+    here. Be sure to also kill the Skeleton Lord. \n\nHurry up, you have only limited
+    time!"
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  m_TaskExecution: 1
+  conditions: []
+  tasks:
+  - id: 4
+  - id: 5
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: 8429455951140046941, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 3
+        m_Window: Inventory
+    00000001:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: -8967533827971111582, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000002:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: -2811142919616601772, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 137
+        m_Window: Inventory
+    00000003:
+      type: {class: StatReward, ns: DevionGames.QuestSystem.Integrations.StatSystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 4877780426593612547, guid: 87bf446dac87fb644af6a76d3d474ee0,
+          type: 3}
+        m_StatsHandler: Player Stats
+        m_StatName: Exp
+        m_Value: 75
+        m_RewardType: 0
+    00000004:
+      type: {class: QuestTask, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Name: Kill Skeletons
+        m_Description: Kill 3 skeletons
+        m_RequiredProgress: 3
+        m_ProgressMessage: '{0}/{1} skeletons'
+        m_UseTimeLimit: 1
+        m_TimeLimit: 300
+        m_Optional: 0
+    00000005:
+      type: {class: QuestTask, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Name: Kill Skeleton Lord
+        m_Description: Kill the skeleton lord
+        m_RequiredProgress: 1
+        m_ProgressMessage: '{0}/{1} skeleton lord'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+--- !u!114 &5015038646102688880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Welcome
+  m_EditorClassIdentifier: 
+  m_QuestName: Welcome
+  m_Title: Welcome to the Quest System
+  m_Description: This is the first quest you have to complete before you can do any
+    other quests. It tests the HasQuest condition.
+  m_AutoComplete: 0
+  m_RestartFailed: 0
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  - id: 1
+  - id: 2
+  m_TaskExecution: 0
+  conditions: []
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: -5663772737389988193, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000001:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: -2811142919616601772, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 120
+        m_Window: Inventory
+    00000002:
+      type: {class: StatReward, ns: DevionGames.QuestSystem.Integrations.StatSystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 4877780426593612547, guid: 87bf446dac87fb644af6a76d3d474ee0,
+          type: 3}
+        m_StatsHandler: Player Stats
+        m_StatName: Strength
+        m_Value: 3
+        m_RewardType: 1
+--- !u!114 &5357671254470072040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: The Sword
+  m_EditorClassIdentifier: 
+  m_QuestName: The Sword
+  m_Title: The Sword
+  m_Description: "Greetings, stranger! \n\nI'm in need of three iron to experiment
+    with my crafting skills. Would you help me to get the resources? \n\nI'm going
+    to reward you well."
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 1
+  rewards:
+  - id: 0
+  - id: 1
+  m_TaskExecution: 0
+  conditions: []
+  tasks:
+  - id: 2
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: 960666660569578442, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000001:
+      type: {class: StatReward, ns: DevionGames.QuestSystem.Integrations.StatSystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 4877780426593612547, guid: 87bf446dac87fb644af6a76d3d474ee0,
+          type: 3}
+        m_StatsHandler: Player Stats
+        m_StatName: Exp
+        m_Value: 35
+        m_RewardType: 0
+    00000002:
+      type: {class: GatherQuestTask, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_Name: Iron Task
+        m_Description: Bring Steve 3 iron
+        m_RequiredProgress: 3
+        m_ProgressMessage: '{0}/{1} iron'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+        m_Item: {fileID: 8763039942855579107, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        m_Window: Inventory
+        m_RemoveItems: 1
+--- !u!114 &8069101094461139134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58f90c13f37d0f4992d7d801cf02f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savingKey: Player
+  autoSave: 0
+  provider: 0
+--- !u!114 &8942450600187530306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Talk
+  m_EditorClassIdentifier: 
+  m_QuestName: Talk
+  m_Title: Talk to Blacksmith
+  m_Description: 'Hello!
+
+    This example quest shows how to setup a talk to npc
+    task.'
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions: []
+  tasks:
+  - id: 1
+  references:
+    version: 1
+    00000000:
+      type: {class: StatReward, ns: DevionGames.QuestSystem.Integrations.StatSystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 4877780426593612547, guid: 87bf446dac87fb644af6a76d3d474ee0,
+          type: 3}
+        m_StatsHandler: Player Stats
+        m_StatName: Exp
+        m_Value: 45
+        m_RewardType: 0
+    00000001:
+      type: {class: QuestTask, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Name: Talk to Blacksmith
+        m_Description: Talk to Blacksmith
+        m_RequiredProgress: 1
+        m_ProgressMessage: '{0}/{1}'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0

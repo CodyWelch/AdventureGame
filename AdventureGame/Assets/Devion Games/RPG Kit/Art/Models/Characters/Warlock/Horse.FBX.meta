@@ -1,0 +1,2545 @@
+fileFormatVersion: 2
+guid: f868335c36af36d40acb95b5937c4463
+labels:
+- character
+- soldier
+- wizard
+- fight
+- knight
+- medieval
+- king
+- lord
+- hero
+- warlord
+- horseman
+- sorcerer
+- mage
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: horse
+    100004: horse back_armor_plate_01
+    100006: horse back_armor_plate_01Opp
+    100008: horse back_armor_plate_02
+    100010: horse back_armor_plate_02Opp
+    100012: horse back_armor_plate_03
+    100014: horse back_armor_plate_03Opp
+    100016: horse back_armor_plate_04
+    100018: horse back_armor_plate_04Opp
+    100020: horse back_armor_plate_05
+    100022: horse back_armor_plate_05Opp
+    100024: horse back_armor_plate_06
+    100026: horse back_armor_plate_06Opp
+    100028: horse back_armor_plate_07
+    100030: horse back_armor_plate_07Opp
+    100032: horse bone_reins
+    100034: horse Head
+    100036: horse HORSEMAN_BONE
+    100038: horse Jaw
+    100040: horse L Calf
+    100042: horse L Clavicle
+    100044: horse L Finger0
+    100046: horse L Foot
+    100048: horse L Forearm
+    100050: horse L Hand
+    100052: horse L HorseLink
+    100054: horse L Thigh
+    100056: horse L Toe0
+    100058: horse L UpperArm
+    100060: horse Neck
+    100062: horse Neck1
+    100064: horse Neck2
+    100066: horse Neck3
+    100068: horse Pelvis
+    100070: horse R Calf
+    100072: horse R Clavicle
+    100074: horse R Finger0
+    100076: horse R Foot
+    100078: horse R Forearm
+    100080: horse R Hand
+    100082: horse R HorseLink
+    100084: horse R Thigh
+    100086: horse R Toe0
+    100088: horse R UpperArm
+    100090: horse Spine
+    100092: horse Spine1
+    100094: horse Spine2
+    100096: horse stirrup
+    100098: horse stirrupOpp
+    100100: horse Tail
+    100102: horse Tail1
+    100104: horse Tail2
+    100106: horse_armor
+    100108: horse_BIP
+    100110: Horse_mask
+    100112: Horse_Reins
+    100114: Horse_saddle
+    100116: Horse_Stirrups
+    400000: //RootNode
+    400002: horse
+    400004: horse back_armor_plate_01
+    400006: horse back_armor_plate_01Opp
+    400008: horse back_armor_plate_02
+    400010: horse back_armor_plate_02Opp
+    400012: horse back_armor_plate_03
+    400014: horse back_armor_plate_03Opp
+    400016: horse back_armor_plate_04
+    400018: horse back_armor_plate_04Opp
+    400020: horse back_armor_plate_05
+    400022: horse back_armor_plate_05Opp
+    400024: horse back_armor_plate_06
+    400026: horse back_armor_plate_06Opp
+    400028: horse back_armor_plate_07
+    400030: horse back_armor_plate_07Opp
+    400032: horse bone_reins
+    400034: horse Head
+    400036: horse HORSEMAN_BONE
+    400038: horse Jaw
+    400040: horse L Calf
+    400042: horse L Clavicle
+    400044: horse L Finger0
+    400046: horse L Foot
+    400048: horse L Forearm
+    400050: horse L Hand
+    400052: horse L HorseLink
+    400054: horse L Thigh
+    400056: horse L Toe0
+    400058: horse L UpperArm
+    400060: horse Neck
+    400062: horse Neck1
+    400064: horse Neck2
+    400066: horse Neck3
+    400068: horse Pelvis
+    400070: horse R Calf
+    400072: horse R Clavicle
+    400074: horse R Finger0
+    400076: horse R Foot
+    400078: horse R Forearm
+    400080: horse R Hand
+    400082: horse R HorseLink
+    400084: horse R Thigh
+    400086: horse R Toe0
+    400088: horse R UpperArm
+    400090: horse Spine
+    400092: horse Spine1
+    400094: horse Spine2
+    400096: horse stirrup
+    400098: horse stirrupOpp
+    400100: horse Tail
+    400102: horse Tail1
+    400104: horse Tail2
+    400106: horse_armor
+    400108: horse_BIP
+    400110: Horse_mask
+    400112: Horse_Reins
+    400114: Horse_saddle
+    400116: Horse_Stirrups
+    2300000: Horse_mask
+    2300002: Horse_saddle
+    3300000: Horse_mask
+    3300002: Horse_saddle
+    4300000: Horse_mask
+    4300002: Horse_saddle
+    4300004: Horse_Stirrups
+    4300006: Horse_Reins
+    4300008: horse
+    4300010: horse_armor
+    7400000: horse_galloping 45
+    7400002: trot 45
+    7400004: trot -45
+    7400006: Galloping Turn Left
+    7400008: Galloping Turn Right
+    7400010: Galloping Strafe Left
+    7400012: Galloping Strafe Right
+    7400014: Troting Turn Left
+    7400016: Troting Turn Right
+    7400018: Jump Up
+    7400020: Mid Air
+    7400022: Fall
+    7400024: Troting Backward
+    7400026: Land
+    7400086: Idle
+    7400088: horse_looking_around
+    7400090: horse_sniff
+    7400092: horse_rear_up
+    7400094: horse_kick
+    7400096: horse_bite
+    7400098: horse_death
+    7400100: horse_kick_ground
+    7400102: horse_eating
+    7400104: horse_walk
+    7400106: Troting
+    7400108: Galloping
+    7400110: horse_jump
+    7400112: horse_running_death
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: horse
+    13700002: horse_armor
+    13700004: Horse_Reins
+    13700006: Horse_Stirrups
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: 
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_looking_around
+      takeName: 
+      firstFrame: 101
+      lastFrame: 226
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_sniff
+      takeName: 
+      firstFrame: 227
+      lastFrame: 287
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_rear_up
+      takeName: 
+      firstFrame: 288
+      lastFrame: 373
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_kick
+      takeName: 
+      firstFrame: 374
+      lastFrame: 400
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_bite
+      takeName: 
+      firstFrame: 401
+      lastFrame: 441
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_death
+      takeName: 
+      firstFrame: 442
+      lastFrame: 468
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_kick_ground
+      takeName: 
+      firstFrame: 473
+      lastFrame: 507
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_eating
+      takeName: 
+      firstFrame: 512
+      lastFrame: 612
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_walk
+      takeName: 
+      firstFrame: 617
+      lastFrame: 651
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troting
+      takeName: 
+      firstFrame: 656
+      lastFrame: 680
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: Force
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 2
+            time: 0
+            value: 5
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - serializedVersion: 2
+            time: 1
+            value: 5
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 0
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Galloping
+      takeName: 
+      firstFrame: 685
+      lastFrame: 700
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: Force
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 2
+            time: 0
+            value: 8
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          - serializedVersion: 2
+            time: 1
+            value: 8
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+          preInfinity: 2
+          postInfinity: 2
+          rotationOrder: 0
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_jump
+      takeName: 
+      firstFrame: 701
+      lastFrame: 736
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: horse_running_death
+      takeName: 
+      firstFrame: 737
+      lastFrame: 777
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Galloping Turn Left
+      takeName: Horse
+      firstFrame: 685
+      lastFrame: 700
+      wrapMode: 0
+      orientationOffsetY: 45
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Galloping Turn Right
+      takeName: Horse
+      firstFrame: 685
+      lastFrame: 700
+      wrapMode: 0
+      orientationOffsetY: -45
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Galloping Strafe Left
+      takeName: Horse
+      firstFrame: 685
+      lastFrame: 700
+      wrapMode: 0
+      orientationOffsetY: 90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Galloping Strafe Right
+      takeName: Horse
+      firstFrame: 685
+      lastFrame: 700
+      wrapMode: 0
+      orientationOffsetY: -90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troting Turn Left
+      takeName: Horse
+      firstFrame: 656
+      lastFrame: 680
+      wrapMode: 0
+      orientationOffsetY: 45
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troting Turn Right
+      takeName: Horse
+      firstFrame: 656
+      lastFrame: 680
+      wrapMode: 0
+      orientationOffsetY: -45
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump Up
+      takeName: Horse
+      firstFrame: 707
+      lastFrame: 709
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Mid Air
+      takeName: Horse
+      firstFrame: 712
+      lastFrame: 715
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 1.4
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fall
+      takeName: Horse
+      firstFrame: 715
+      lastFrame: 717
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 1.21
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troting Backward
+      takeName: Horse
+      firstFrame: 656
+      lastFrame: 680
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Land
+      takeName: Horse
+      firstFrame: 720
+      lastFrame: 724
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.8354481
+        functionName: OnControllerLanded
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: horse
+        weight: 1
+      - path: horse_armor
+        weight: 1
+      - path: horse_BIP
+        weight: 1
+      - path: horse_BIP/horse Pelvis
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_02Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_03Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_04Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_05Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse back_armor_plate_07Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_01Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse back_armor_plate_06Opp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse L Thigh/horse L Calf/horse
+          L HorseLink/horse L Foot/horse L Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse R Thigh/horse R Calf/horse
+          R HorseLink/horse R Foot/horse R Toe0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse HORSEMAN_BONE
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          L Clavicle/horse L UpperArm/horse L Forearm/horse L Hand/horse L Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse bone_reins
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/horse Jaw
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          Neck1/horse Neck2/horse Neck3/horse Head/Horse_mask
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse Spine2/horse Neck/horse
+          R Clavicle/horse R UpperArm/horse R Forearm/horse R Hand/horse R Finger0
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrup
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/horse stirrupOpp
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Spine1/Horse_saddle
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1
+        weight: 1
+      - path: horse_BIP/horse Pelvis/horse Spine/horse Tail/horse Tail1/horse Tail2
+        weight: 1
+      - path: Horse_Reins
+        weight: 1
+      - path: Horse_Stirrups
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: horse_BIP
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

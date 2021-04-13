@@ -1,0 +1,1829 @@
+fileFormatVersion: 2
+guid: 8993ffe6f30df844a9bd6fb963fbb2af
+labels:
+- character
+- fantasy
+- knight
+- medieval
+- soldier
+- warrior
+- halberd
+- guard
+- sodier
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bip01
+  - first:
+      1: 100002
+    second: Bip01 Head
+  - first:
+      1: 100004
+    second: Bip01 L Calf
+  - first:
+      1: 100006
+    second: Bip01 L Clavicle
+  - first:
+      1: 100008
+    second: Bip01 L Finger0
+  - first:
+      1: 100010
+    second: Bip01 L Finger01
+  - first:
+      1: 100012
+    second: Bip01 L Finger02
+  - first:
+      1: 100014
+    second: Bip01 L Finger1
+  - first:
+      1: 100016
+    second: Bip01 L Finger11
+  - first:
+      1: 100018
+    second: Bip01 L Finger12
+  - first:
+      1: 100020
+    second: Bip01 L Foot
+  - first:
+      1: 100022
+    second: Bip01 L ForeTwist
+  - first:
+      1: 100024
+    second: Bip01 L ForeTwist1
+  - first:
+      1: 100026
+    second: Bip01 L Hand
+  - first:
+      1: 100028
+    second: Bip01 L Thigh
+  - first:
+      1: 100030
+    second: Bip01 L Toe0
+  - first:
+      1: 100032
+    second: Bip01 L UpperArm
+  - first:
+      1: 100034
+    second: Bip01 Neck
+  - first:
+      1: 100036
+    second: Bip01 Pelvis
+  - first:
+      1: 100038
+    second: Bip01 R Calf
+  - first:
+      1: 100040
+    second: Bip01 R Clavicle
+  - first:
+      1: 100042
+    second: Bip01 R Finger0
+  - first:
+      1: 100044
+    second: Bip01 R Finger01
+  - first:
+      1: 100046
+    second: Bip01 R Finger02
+  - first:
+      1: 100048
+    second: Bip01 R Finger1
+  - first:
+      1: 100050
+    second: Bip01 R Finger11
+  - first:
+      1: 100052
+    second: Bip01 R Finger12
+  - first:
+      1: 100054
+    second: Bip01 R Foot
+  - first:
+      1: 100056
+    second: Bip01 R ForeTwist
+  - first:
+      1: 100058
+    second: Bip01 R ForeTwist1
+  - first:
+      1: 100060
+    second: Bip01 R Hand
+  - first:
+      1: 100062
+    second: Bip01 R Thigh
+  - first:
+      1: 100064
+    second: Bip01 R Toe0
+  - first:
+      1: 100066
+    second: Bip01 R UpperArm
+  - first:
+      1: 100068
+    second: Bip01 Rhand_Weapon
+  - first:
+      1: 100070
+    second: Bip01 RUpArmTwist
+  - first:
+      1: 100072
+    second: Bip01 skirt_back
+  - first:
+      1: 100074
+    second: Bip01 skirt_front
+  - first:
+      1: 100076
+    second: Bip01 skirt_left
+  - first:
+      1: 100078
+    second: Bip01 skirt_right
+  - first:
+      1: 100080
+    second: Bip01 Spine
+  - first:
+      1: 100082
+    second: Bip01 Spine1
+  - first:
+      1: 100084
+    second: Bip01 Spine2
+  - first:
+      1: 100086
+    second: //RootNode
+  - first:
+      1: 100088
+    second: city_guard
+  - first:
+      1: 100090
+    second: halberd
+  - first:
+      4: 400000
+    second: Bip01
+  - first:
+      4: 400002
+    second: Bip01 Head
+  - first:
+      4: 400004
+    second: Bip01 L Calf
+  - first:
+      4: 400006
+    second: Bip01 L Clavicle
+  - first:
+      4: 400008
+    second: Bip01 L Finger0
+  - first:
+      4: 400010
+    second: Bip01 L Finger01
+  - first:
+      4: 400012
+    second: Bip01 L Finger02
+  - first:
+      4: 400014
+    second: Bip01 L Finger1
+  - first:
+      4: 400016
+    second: Bip01 L Finger11
+  - first:
+      4: 400018
+    second: Bip01 L Finger12
+  - first:
+      4: 400020
+    second: Bip01 L Foot
+  - first:
+      4: 400022
+    second: Bip01 L ForeTwist
+  - first:
+      4: 400024
+    second: Bip01 L ForeTwist1
+  - first:
+      4: 400026
+    second: Bip01 L Hand
+  - first:
+      4: 400028
+    second: Bip01 L Thigh
+  - first:
+      4: 400030
+    second: Bip01 L Toe0
+  - first:
+      4: 400032
+    second: Bip01 L UpperArm
+  - first:
+      4: 400034
+    second: Bip01 Neck
+  - first:
+      4: 400036
+    second: Bip01 Pelvis
+  - first:
+      4: 400038
+    second: Bip01 R Calf
+  - first:
+      4: 400040
+    second: Bip01 R Clavicle
+  - first:
+      4: 400042
+    second: Bip01 R Finger0
+  - first:
+      4: 400044
+    second: Bip01 R Finger01
+  - first:
+      4: 400046
+    second: Bip01 R Finger02
+  - first:
+      4: 400048
+    second: Bip01 R Finger1
+  - first:
+      4: 400050
+    second: Bip01 R Finger11
+  - first:
+      4: 400052
+    second: Bip01 R Finger12
+  - first:
+      4: 400054
+    second: Bip01 R Foot
+  - first:
+      4: 400056
+    second: Bip01 R ForeTwist
+  - first:
+      4: 400058
+    second: Bip01 R ForeTwist1
+  - first:
+      4: 400060
+    second: Bip01 R Hand
+  - first:
+      4: 400062
+    second: Bip01 R Thigh
+  - first:
+      4: 400064
+    second: Bip01 R Toe0
+  - first:
+      4: 400066
+    second: Bip01 R UpperArm
+  - first:
+      4: 400068
+    second: Bip01 Rhand_Weapon
+  - first:
+      4: 400070
+    second: Bip01 RUpArmTwist
+  - first:
+      4: 400072
+    second: Bip01 skirt_back
+  - first:
+      4: 400074
+    second: Bip01 skirt_front
+  - first:
+      4: 400076
+    second: Bip01 skirt_left
+  - first:
+      4: 400078
+    second: Bip01 skirt_right
+  - first:
+      4: 400080
+    second: Bip01 Spine
+  - first:
+      4: 400082
+    second: Bip01 Spine1
+  - first:
+      4: 400084
+    second: Bip01 Spine2
+  - first:
+      4: 400086
+    second: //RootNode
+  - first:
+      4: 400088
+    second: city_guard
+  - first:
+      4: 400090
+    second: halberd
+  - first:
+      23: 2300000
+    second: halberd
+  - first:
+      33: 3300000
+    second: halberd
+  - first:
+      43: 4300000
+    second: halberd
+  - first:
+      43: 4300002
+    second: city_guard
+  - first:
+      74: 7400000
+    second: Guard_looking_around
+  - first:
+      74: 7400002
+    second: Guard_from_StandingFree_to_Combat
+  - first:
+      74: 7400004
+    second: Guard_combat_mode
+  - first:
+      74: 7400006
+    second: Guard_dodge_backwards
+  - first:
+      74: 7400008
+    second: Guard_dodge_to_left
+  - first:
+      74: 7400010
+    second: Guard_dodge_to_right
+  - first:
+      74: 7400012
+    second: Guard_duck_below_high_swing
+  - first:
+      74: 7400014
+    second: Guard_parry_1
+  - first:
+      74: 7400016
+    second: Guard_parry_2
+  - first:
+      74: 7400018
+    second: Guard_parry_from_stright_down
+  - first:
+      74: 7400020
+    second: Guard_specal_attack_A
+  - first:
+      74: 7400022
+    second: Guard_specal_attack_B
+  - first:
+      74: 7400024
+    second: Guard_special_attack_C
+  - first:
+      74: 7400026
+    second: Guard_swing_left
+  - first:
+      74: 7400028
+    second: Guard_swing_right
+  - first:
+      74: 7400030
+    second: Guard_swing_straight_down
+  - first:
+      74: 7400032
+    second: Guard_thrust
+  - first:
+      74: 7400034
+    second: Guard_from_Combat_to_StandingFree
+  - first:
+      74: 7400036
+    second: Guard_pointing_A
+  - first:
+      74: 7400038
+    second: Guard_salute
+  - first:
+      74: 7400040
+    second: Guard_StandingFree
+  - first:
+      74: 7400042
+    second: Guard_talking
+  - first:
+      74: 7400044
+    second: Guard_use_object
+  - first:
+      74: 7400046
+    second: Guard_yawn
+  - first:
+      74: 7400048
+    second: Guard_run
+  - first:
+      74: 7400050
+    second: Guard_Jump_runing
+  - first:
+      74: 7400052
+    second: Guard_walk
+  - first:
+      74: 7400054
+    second: Guard_Dying
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: city_guard
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: halberd
+    second: {fileID: 2100000, guid: 93f2c5758c2693d41a43bbad78d6fea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: halberd_warrior
+    second: {fileID: 2100000, guid: 28b1d16c69b056e4dba47a3aa115720e, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 3
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'city_guard' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip01 Spine' has translation animation
+      that will be discarded.\n\t'Bip01 Spine2' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip01 R ForeTwist1'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bip01
+      L ForeTwist1' is inbetween humanoid transforms and has rotation animation that
+      will be discarded.\n"
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'city_guard':\n\tLeftLowerLeg
+      average position error 0.2 mm and maximum position error 3.9 mm at time 18:
+      2 (39.4%) Frame 542\n\tRightLowerLeg average position error 0.2 mm and maximum
+      position error 3.9 mm at time 22:21 (49.5%) Frame 681\n\tLeftUpperArm average
+      position error 18.1 mm and maximum position error 46.2 mm at time 41:17 (90.7%)
+      Frame 1247\n\tLeftLowerArm average position error 12.7 mm and maximum position
+      error 40.0 mm at time 18:17 (40.5%) Frame 557\n\tLeftHand average position
+      error 9.2 mm and maximum position error 39.1 mm at time 18:17 (40.5%) Frame
+      557\n\tRightUpperArm average position error 17.4 mm and maximum position error
+      45.3 mm at time 43: 1 (93.9%) Frame 1291\n\tRightLowerArm average position
+      error 13.6 mm and maximum position error 39.7 mm at time 42:29 (93.7%) Frame
+      1289\n\tRightHand average position error 12.6 mm and maximum position error
+      39.6 mm at time 42:15 (92.7%) Frame 1275\n\tHead average position error 22.8
+      mm and maximum position error 57.1 mm at time 43: 1 (93.9%) Frame 1291\n\tLeftFoot
+      average orientation error 0.0 deg and maximum orientation error 1.4 deg at
+      time 21:16 (47.0%) Frame 646\n\tRightFoot average orientation error 0.1 deg
+      and maximum orientation error 2.6 deg at time 12:25 (28.0%) Frame 385\n"
+    animationDoRetargetingWarnings: 1
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Guard_looking_around
+      takeName: 
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 176
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_from_StandingFree_to_Combat
+      takeName: 
+      internalID: 0
+      firstFrame: 177
+      lastFrame: 197
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_combat_mode
+      takeName: 
+      internalID: 0
+      firstFrame: 198
+      lastFrame: 248
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_dodge_backwards
+      takeName: 
+      internalID: 0
+      firstFrame: 249
+      lastFrame: 284
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_dodge_to_left
+      takeName: 
+      internalID: 0
+      firstFrame: 285
+      lastFrame: 320
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_dodge_to_right
+      takeName: 
+      internalID: 0
+      firstFrame: 321
+      lastFrame: 356
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_duck_below_high_swing
+      takeName: 
+      internalID: 0
+      firstFrame: 357
+      lastFrame: 392
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_parry_1
+      takeName: 
+      internalID: 0
+      firstFrame: 393
+      lastFrame: 428
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_parry_2
+      takeName: 
+      internalID: 0
+      firstFrame: 429
+      lastFrame: 464
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_parry_from_stright_down
+      takeName: 
+      internalID: 0
+      firstFrame: 465
+      lastFrame: 500
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_specal_attack_A
+      takeName: 
+      internalID: 0
+      firstFrame: 501
+      lastFrame: 536
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_specal_attack_B
+      takeName: 
+      internalID: 0
+      firstFrame: 537
+      lastFrame: 582
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_special_attack_C
+      takeName: 
+      internalID: 0
+      firstFrame: 583
+      lastFrame: 628
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_swing_left
+      takeName: 
+      internalID: 0
+      firstFrame: 629
+      lastFrame: 664
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_swing_right
+      takeName: 
+      internalID: 0
+      firstFrame: 665
+      lastFrame: 700
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_swing_straight_down
+      takeName: 
+      internalID: 0
+      firstFrame: 701
+      lastFrame: 736
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_thrust
+      takeName: 
+      internalID: 0
+      firstFrame: 737
+      lastFrame: 772
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_from_Combat_to_StandingFree
+      takeName: 
+      internalID: 0
+      firstFrame: 773
+      lastFrame: 793
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_pointing_A
+      takeName: 
+      internalID: 0
+      firstFrame: 794
+      lastFrame: 854
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_salute
+      takeName: 
+      internalID: 0
+      firstFrame: 855
+      lastFrame: 915
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_StandingFree
+      takeName: 
+      internalID: 0
+      firstFrame: 920
+      lastFrame: 1020
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_talking
+      takeName: 
+      internalID: 0
+      firstFrame: 1021
+      lastFrame: 1066
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_use_object
+      takeName: 
+      internalID: 0
+      firstFrame: 1067
+      lastFrame: 1107
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_yawn
+      takeName: 
+      internalID: 0
+      firstFrame: 1108
+      lastFrame: 1193
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_run
+      takeName: 
+      internalID: 0
+      firstFrame: 1198
+      lastFrame: 1220
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_Jump_runing
+      takeName: 
+      internalID: 0
+      firstFrame: 1225
+      lastFrame: 1265
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_walk
+      takeName: 
+      internalID: 0
+      firstFrame: 1269
+      lastFrame: 1304
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guard_Dying
+      takeName: 
+      internalID: 0
+      firstFrame: 1310
+      lastFrame: 1375
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0092
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Bip01 Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L ForeTwist
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R ForeTwist
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Finger1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Finger11
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Finger12
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Finger1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Finger11
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Finger12
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 R Finger02
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip01 L Finger02
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Warrior(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01
+      parentName: Warrior(Clone)
+      position: {x: 0.008286581, y: 0.93899554, z: 0.0005082577}
+      rotation: {x: 0.51751125, y: -0.49857742, z: -0.4848515, w: -0.49851954}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+    - name: Bip01 Pelvis
+      parentName: Bip01
+      position: {x: -0.0011052378, y: -0.00019642273, z: 0.033860564}
+      rotation: {x: 0.5148776, y: -0.48221928, z: -0.5011518, w: -0.501211}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Bip01 L Thigh
+      parentName: Bip01 Pelvis
+      position: {x: 0.00000014038088, y: 0.00000020399095, z: 0.11848489}
+      rotation: {x: 0.026897043, y: -0.9995924, z: -0.00004784763, w: -0.0095719695}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: Bip01 L Calf
+      parentName: Bip01 L Thigh
+      position: {x: -0.4410223, y: -0.00000001754761, z: 0.000000008773805}
+      rotation: {x: -0.000000014901161, y: 0.000000029802322, z: 0.11284201, w: 0.993613}
+      scale: {x: 0.9999998, y: 1, z: 1.0000001}
+    - name: Bip01 L Foot
+      parentName: Bip01 L Calf
+      position: {x: -0.3883645, y: 0.000000010967255, z: 0}
+      rotation: {x: 0.0011283454, y: 0.009505331, z: -0.08607077, w: 0.9962431}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.99999976}
+    - name: Bip01 L Toe0
+      parentName: Bip01 L Foot
+      position: {x: -0.12169478, y: 0.13949528, z: 0}
+      rotation: {x: 0.00000041723243, y: 0.0000004646369, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Bip01 R Thigh
+      parentName: Bip01 Pelvis
+      position: {x: -0.00000014038088, y: -0.00000012502672, z: -0.11848488}
+      rotation: {x: 0.026897024, y: -0.9995924, z: 0.00004923343, w: 0.009572088}
+      scale: {x: 0.9999999, y: 1.0000002, z: 0.9999998}
+    - name: Bip01 R Calf
+      parentName: Bip01 R Thigh
+      position: {x: -0.44102237, y: 0, z: 0.00000001754761}
+      rotation: {x: -0.000000029802322, y: -0.000000059604645, z: 0.112841934, w: 0.993613}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Bip01 R Foot
+      parentName: Bip01 R Calf
+      position: {x: -0.3883645, y: 0, z: -0.00000003509522}
+      rotation: {x: -0.0011283156, y: -0.00950536, z: -0.08607077, w: 0.9962431}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: Bip01 R Toe0
+      parentName: Bip01 R Foot
+      position: {x: -0.12169478, y: 0.13949533, z: 0}
+      rotation: {x: 0.0000005066393, y: 0.0000004314199, z: -0.7071067, w: 0.7071068}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: Bip01 skirt_back
+      parentName: Bip01 Pelvis
+      position: {x: -0.119300626, y: -0.08791419, z: 0.000018819808}
+      rotation: {x: 0.0000002682209, y: 0.0000006854534, z: -0.9902126, w: -0.1395673}
+      scale: {x: 1.0000002, y: 0.99999994, z: 0.99999994}
+    - name: Bip01 skirt_front
+      parentName: Bip01 Pelvis
+      position: {x: -0.10811706, y: 0.16010912, z: -0.000012230683}
+      rotation: {x: 0.0000001937151, y: -0.0000006854534, z: 0.9954343, w: -0.09544948}
+      scale: {x: 0.9999998, y: 1, z: 0.99999994}
+    - name: Bip01 skirt_left
+      parentName: Bip01 Pelvis
+      position: {x: -0.10433984, y: 0.025001153, z: 0.1473184}
+      rotation: {x: 0.14729142, y: -0.69159573, z: -0.69159675, w: -0.14729066}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Bip01 skirt_right
+      parentName: Bip01 Pelvis
+      position: {x: -0.10435941, y: 0.025023548, z: -0.14731124}
+      rotation: {x: 0.14729084, y: -0.6915967, z: 0.69159585, w: 0.14729132}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1}
+    - name: Bip01 Spine
+      parentName: Bip01 Pelvis
+      position: {x: -0.1014609, y: 0.0047131884, z: -0.010242399}
+      rotation: {x: 0.0000020861623, y: 0, z: -0.000000059604638, w: -1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Bip01 Spine1
+      parentName: Bip01 Spine
+      position: {x: -0.10636932, y: -0.000081649014, z: -0.0000023075106}
+      rotation: {x: 0.00000013411045, y: -0.000000044703484, z: -0.000000074505806,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 Spine2
+      parentName: Bip01 Spine1
+      position: {x: -0.10257546, y: -0.0001602009, z: -0.0000058356763}
+      rotation: {x: -0.000000059604645, y: 0.000000014901161, z: -0.000000014901161,
+        w: 1}
+      scale: {x: 0.99999976, y: 0.9999999, z: 1}
+    - name: Bip01 L Clavicle
+      parentName: Bip01 Spine2
+      position: {x: -0.15823928, y: 0.00003609543, z: 0.03778844}
+      rotation: {x: -0.69442034, y: -0.018831138, z: 0.7190933, w: 0.018184885}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: Bip01 L UpperArm
+      parentName: Bip01 L Clavicle
+      position: {x: -0.18512069, y: 0, z: 0}
+      rotation: {x: 0.011599491, y: -0.014778724, z: 0.024397407, w: 0.99952585}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1.0000004}
+    - name: Bip01 L ForeTwist
+      parentName: Bip01 L UpperArm
+      position: {x: -0.26897514, y: 0, z: 0}
+      rotation: {x: 0.00013277121, y: 0.000000059604645, z: 0.0006685406, w: 0.9999998}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Bip01 L ForeTwist1
+      parentName: Bip01 L ForeTwist
+      position: {x: -0.12512836, y: 0, z: 0.00000003509522}
+      rotation: {x: 0.00013269298, y: -0.000000014901161, z: 0.000000007450581, w: 1}
+      scale: {x: 0.8, y: 0.8000003, z: 0.8000002}
+    - name: Bip01 L Hand
+      parentName: Bip01 L ForeTwist1
+      position: {x: -0.1251285, y: 0.000000008773805, z: 0}
+      rotation: {x: 0.70701295, y: 4.6566123e-10, z: 0.000000029802319, w: -0.70720065}
+      scale: {x: 0.99999976, y: 0.99999994, z: 0.99999994}
+    - name: Bip01 L Finger0
+      parentName: Bip01 L Hand
+      position: {x: -0.04071796, y: 0.025169868, z: -0.05923173}
+      rotation: {x: -0.77226365, y: 0.18648106, z: -0.2574217, w: -0.5500616}
+      scale: {x: 0.99999964, y: 0.9999995, z: 0.9999994}
+    - name: Bip01 L Finger01
+      parentName: Bip01 L Finger0
+      position: {x: -0.039805625, y: 0.00000001754761, z: 0}
+      rotation: {x: -0.00000007566992, y: -0.0000014062963, z: -0.037770733, w: 0.9992864}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Bip01 L Finger02
+      parentName: Bip01 L Finger01
+      position: {x: -0.047129154, y: -0.00000003509522, z: 0.00000003509522}
+      rotation: {x: -0.00000000745058, y: 0.000000074505806, z: -0.11640213, w: 0.9932022}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: Bip01 L Finger1
+      parentName: Bip01 L Hand
+      position: {x: -0.13134961, y: 0, z: -0.000000008773805}
+      rotation: {x: -0.0003981276, y: -9.313226e-10, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.99999976}
+    - name: Bip01 L Finger11
+      parentName: Bip01 L Finger1
+      position: {x: -0.04991333, y: 0.00000010528564, z: -0.00000002632141}
+      rotation: {x: -0.0000000062864265, y: 0.000000013969837, z: -0.020672051, w: 0.9997864}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.99999976}
+    - name: Bip01 L Finger12
+      parentName: Bip01 L Finger11
+      position: {x: -0.03823336, y: -0.00000003509522, z: 0.00000002632141}
+      rotation: {x: 0.000000097090364, y: -0.000000005587935, z: -0.003220215, w: 0.9999949}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Bip01 Neck
+      parentName: Bip01 Spine2
+      position: {x: -0.21456936, y: 0.00020480252, z: -0.00000068435673}
+      rotation: {x: -0.000000059604645, y: 0.000001013279, z: -0.22533897, w: 0.9742805}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Bip01 Head
+      parentName: Bip01 Neck
+      position: {x: -0.06649884, y: 0, z: -0.000000008773805}
+      rotation: {x: 0, y: 0.0000007748604, z: -0.15682851, w: -0.9876259}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 R Clavicle
+      parentName: Bip01 Spine2
+      position: {x: -0.15823928, y: 0.000036306, z: -0.037788447}
+      rotation: {x: 0.6944204, y: 0.018829226, z: 0.7190934, w: 0.018183053}
+      scale: {x: 0.9999997, y: 0.99999994, z: 1}
+    - name: Bip01 R UpperArm
+      parentName: Bip01 R Clavicle
+      position: {x: -0.18512072, y: 0, z: 0}
+      rotation: {x: 0.011599538, y: -0.014778715, z: -0.024397288, w: -0.9995258}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: Bip01 R ForeTwist
+      parentName: Bip01 R UpperArm
+      position: {x: -0.2689752, y: -0.000000008773805, z: 0}
+      rotation: {x: -0.0001326203, y: -0.000000022351736, z: 0.0006686671, w: 0.99999976}
+      scale: {x: 1.0000001, y: 0.9999995, z: 1.0000001}
+    - name: Bip01 R ForeTwist1
+      parentName: Bip01 R ForeTwist
+      position: {x: -0.1251285, y: 0.00000007019044, z: 0}
+      rotation: {x: -0.00013279915, y: 0.000000014901161, z: -0.000000029802322, w: 1}
+      scale: {x: 0.8, y: 0.8, z: 0.8}
+    - name: Bip01 R Hand
+      parentName: Bip01 R ForeTwist1
+      position: {x: -0.141, y: -0, z: 0.005}
+      rotation: {x: -0.707013, y: 0.000000029802322, z: -0.000000017695129, w: -0.7072006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01 R Finger0
+      parentName: Bip01 R Hand
+      position: {x: -0.04071791, y: 0.025169972, z: 0.059231807}
+      rotation: {x: 0.7722649, y: -0.1864795, z: -0.2574208, w: -0.55006087}
+      scale: {x: 1, y: 0.9999999, z: 0.9999997}
+    - name: Bip01 R Finger01
+      parentName: Bip01 R Finger0
+      position: {x: -0.039805625, y: -0.00000007019044, z: -0.00000003509522}
+      rotation: {x: -0.000000089406946, y: -0.000001106411, z: -0.0377701, w: 0.9992865}
+      scale: {x: 1, y: 0.99999964, z: 0.99999994}
+    - name: Bip01 R Finger02
+      parentName: Bip01 R Finger01
+      position: {x: -0.04712912, y: 0, z: 0}
+      rotation: {x: -0.000000029802322, y: 0.000000059604645, z: -0.11640215, w: 0.9932022}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Bip01 R Finger1
+      parentName: Bip01 R Hand
+      position: {x: -0.13134961, y: 0.00000007019044, z: 0}
+      rotation: {x: 0.00039809942, y: 0.000000013969839, z: -0.00000011538941, w: 0.99999994}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: Bip01 R Finger11
+      parentName: Bip01 R Finger1
+      position: {x: -0.04991336, y: 0.00000003509522, z: -0.00000007019044}
+      rotation: {x: 0.000000026077032, y: -0.000000010244548, z: -0.020671993, w: 0.9997864}
+      scale: {x: 1.0000004, y: 1, z: 0.99999994}
+    - name: Bip01 R Finger12
+      parentName: Bip01 R Finger11
+      position: {x: -0.038233433, y: 0.00000003509522, z: 0}
+      rotation: {x: 0.000000052154057, y: 0.000000005587935, z: -0.0032202608, w: 0.9999949}
+      scale: {x: 0.99999976, y: 1.0000001, z: 1}
+    - name: Bip01 Rhand_Weapon
+      parentName: Bip01 R Hand
+      position: {x: -0.09205463, y: 0.035156913, z: 0.0006609833}
+      rotation: {x: -0.5072498, y: 0.48064172, z: 0.51227397, w: 0.49925604}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: halberd
+      parentName: Bip01 Rhand_Weapon
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0.00000025099158, y: -0.0000004377215, z: 0.0000005066396, w: 1}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000004}
+    - name: Bip01 RUpArmTwist
+      parentName: Bip01 R Clavicle
+      position: {x: -0.18512072, y: 0, z: 0}
+      rotation: {x: -0.11016665, y: 0.44959915, z: 0.32983544, w: 0.8227591}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: city_guard
+      parentName: Warrior(Clone)
+      position: {x: 8.878549e-11, y: 0.9060546, z: -0.013493912}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1.01935, y: 1.01935, z: 1.01935}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.0092
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

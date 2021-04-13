@@ -1,0 +1,243 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+
+namespace Plugins
+{
+    public static class DeepCopyExtension
+    {
+		public static T DeepCopy<T> (this T src) { return (T)(DeepCopyInternal(src, new Dictionary<object,object>())); }
+
+		public static object DeepCopyInternal(this object src, Dictionary<object,object> usedRefs = null) 
+		{
+			if (src == null) return null;
+
+			Type type = src.GetType();
+
+			//special cases
+			if (type.IsValueType) return src;
+			if (usedRefs.ContainsKey(src)) return usedRefs[src];
+			if (type==typeof(string)) return ((string)src).Clone();
+			if (typeof(Delegate).IsAssignableFrom(type)) return null;  //skipping delegates
+			if (type.IsSubclassOf(typeof(MemberInfo))) return src; //keep refs to all reflection stuff
+			if (type.IsSubclassOf(typeof(UnityEngine.Object)) && 
+				!type.IsSubclassOf(typeof(UnityEngine.ScriptableObject)) ) return src; //do not clone unity objects (except scripts)
+			
+
+			if (type.IsArray)
+			{
+				Array srcArray = (Array)(object)src;
+				Array dstArray = (Array)srcArray.Clone();
+				usedRefs.Add(src,dstArray);
+
+				Type elementType = type.GetElementType();
+				
+				if (!elementType.IsValueType)
+					for (int i=0; i<srcArray.Length; i++)
+					{
+						object val = DeepCopyInternal(srcArray.GetValue(i), usedRefs);
+						dstArray.SetValue(val, i);
+					}
+
+				return dstArray;
+			}
+
+			
+
+			//making a memberwise clone
+			MethodInfo cloneMethod = typeof(object).GetMethod("MemberwiseClone", BindingFlags.NonPublic | BindingFlags.Instance);
+			object dst = cloneMethod.Invoke(src, null);
+			usedRefs.Add(src,dst); //adding to refs dict before copy references to handle circular links
+
+			//deep copy references
+			FieldInfo[] fields = type.GetFields();
+			for (int i=0; i<fields.Length; i++)
+			{
+				if (fields[i].FieldType.IsValueType) // continue;
+				{
+					object val = fields[i].GetValue(src);
+					fields[i].SetValue(dst,val); 
+				}
+					
+				else
+				{
+					object srcVal = fields[i].GetValue(src);
+					object dstVal = DeepCopyInternal(srcVal, usedRefs);
+					fields[i].SetValue(dst,dstVal);
+				}
+			}
+
+			return dst;
+		}
+
+
+		public static T DeepCopyPreservingRefs<T> (this T src, ref Dictionary<object,object> usedRefs) 
+		/// Creates a copy trying to maintain object references using reference dictionary (just copies their values).
+		{
+			//result object
+			object dst = DeepCopyInternal(src, usedRefs);
+
+			//updating all values in used refs
+			//var prevUsedRefs = new Dictionary<object,object> (usedRefs);
+			var prevUsedRefs = new Dictionary<object,object> ();
+			foreach (var kvp in usedRefs)
+			{
+				if (prevUsedRefs.ContainsKey(kvp.Key))
+					throw new Exception("Key exists: " + kvp.Key);
+				prevUsedRefs.Add(kvp.Key, kvp.Value);
+			}
+
+			foreach (var kvp in prevUsedRefs)
+			{
+				object srcObj = kvp.Key;
+				object dstObj = kvp.Value;
+
+				Type type = srcObj.GetType();
+
+				//array
+				if (type.IsArray)
+				{
+					Array srcArray = (Array)srcObj;
+					Array dstArray = (Array)dstObj;
+					
+					if (type.GetElementType().IsValueType)
+						Array.Copy(srcArray, dstArray, srcArray.Length);  //TODO: will not change an array length
+					else
+						for (int i=0; i<srcArray.Length; i++)
+						{
+							object val = DeepCopyInternal(srcArray.GetValue(i), usedRefs);
+							dstArray.SetValue(val, i);
+						}
+				}
+
+				//class
+				else
+				{
+					//fields
+					FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+					for (int i=0; i<fields.Length; i++)
+					{
+						FieldInfo field = fields[i];
+
+						if (field.IsLiteral) continue; //leaving constant fields blank
+						if (field.FieldType.IsPointer) continue; //skipping pointers (they make unity crash. Maybe require unsafe)
+						//if (field.IsNotSerialized) continue;
+						
+						object val = field.GetValue(srcObj);
+						if (!field.FieldType.IsValueType) val = DeepCopyInternal(val, usedRefs);
+						field.SetValue(dstObj,val);
+					}
+
+					//properties
+					//most of the properties could only be changed from the main thread
+					/*PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+					for (int i=0;i<properties.Length;i++) 
+					{
+						PropertyInfo prop = properties[i];
+
+						if (!prop.CanWrite) continue;
+						if (prop.Name=="Item") continue; //ignoring this[x] 
+
+						object val = prop.GetValue(srcObj,null);
+						if (!prop.PropertyType.IsValueType) val = DeepCopyInternal(val, usedRefs);
+						prop.SetValue(dstObj,val,null);
+					}*/
+				}
+
+			}
+
+			return (T)dst;
+		}
+
+
+		public static int CheckEquality (object srcObj, object dstObj, HashSet<object> used=null)
+		/// Testing if the class was copied right
+		{
+			if (used == null) used = new HashSet<object>();
+			if (used.Contains(srcObj)) return 0;
+			used.Add(srcObj);
+			int numChecked = 1;
+
+			if (srcObj==null && dstObj==null) return 1;
+			if (srcObj==null && dstObj!=null) throw new Exception("CheckEquality: Src is null while dst is " + dstObj);
+			if (srcObj!=null && dstObj==null) throw new Exception("CheckEquality: Dst is null while src is " + srcObj);
+
+			Type type = srcObj.GetType();
+
+			if (type.IsSubclassOf(typeof(UnityEngine.Object))) return 0;
+
+			if (type.IsSubclassOf(typeof(MemberInfo))) return 0; //do not check reflections - they are same
+				  
+			if (type != dstObj.GetType())
+				throw new Exception("CheckEquality: Types differ " + type + " and " + dstObj.GetType());
+
+			if (!type.IsValueType  &&  type!=typeof(string)  &&  srcObj==dstObj)
+					throw new Exception("CheckEquality: Are same " + srcObj);   
+
+			//array
+			if (type.IsArray)
+			{
+				Array srcArray = (Array)srcObj;
+				Array dstArray = (Array)dstObj;
+					
+				if (type.GetElementType().IsValueType)
+				{
+					for (int i=0; i<srcArray.Length; i++)
+						if (!srcArray.GetValue(i).Equals(dstArray.GetValue(i))) 
+							throw new Exception("CheckEquality: arrays not equal "  + srcObj + " and " + dstArray);
+				}
+					
+				else
+					for (int i=0; i<srcArray.Length; i++)
+						numChecked += CheckEquality(srcArray.GetValue(i), dstArray.GetValue(i), used);
+			}
+
+			//common case
+			else
+			{
+					//fields
+					FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+					for (int i=0; i<fields.Length; i++)
+					{
+						FieldInfo field = fields[i];
+
+						if (field.IsLiteral) continue; //leaving constant fields blank
+						if (field.FieldType.IsPointer) continue; //skipping pointers (they make unity crash. Maybe require unsafe)
+						//if (field.IsNotSerialized) continue;
+						
+						if (field.FieldType.IsValueType)
+						{
+							if (!field.GetValue(srcObj).Equals(field.GetValue(dstObj)))
+								throw new Exception("CheckEquality: not equal " + field.Name + " " + field.GetValue(srcObj) + " and " + field.GetValue(dstObj));
+						}
+						else
+						{
+							numChecked += CheckEquality(field.GetValue(srcObj), field.GetValue(dstObj), used);
+						}
+					}
+
+					//properties
+					/*PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+					for (int i=0;i<properties.Length;i++) 
+					{
+						PropertyInfo prop = properties[i];
+
+						if (!prop.CanWrite) continue;
+						if (prop.Name=="Item") continue; //ignoring this[x] 
+
+						if (prop.PropertyType.IsValueType)
+						{
+							if (!prop.GetValue(srcObj,null).Equals(prop.GetValue(dstObj,null)))
+								throw new Exception("CheckEquality: not equal " + prop.Name + " " + prop.GetValue(srcObj,null) + " and " + prop.GetValue(dstObj,null));
+						}
+						else
+						{
+							numChecked += CheckEquality(prop.GetValue(srcObj,null), prop.GetValue(dstObj,null), used);
+						}
+					}*/
+			}
+
+			return numChecked;
+		}
+	}
+}

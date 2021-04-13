@@ -1,0 +1,678 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8307897732312022630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fc586332a6b984685efb399be62e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectCharacterScene: Select Character
+  createCharacterScene: Create Character
+  playScene: Main Scene
+  debugMessages: 1
+--- !u!114 &-7366036286394985278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebc934edc065c944957f08bd249860c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accountKey: Account
+  provider: 0
+--- !u!114 &-6870675064245720123
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd38d9bb70aedfc48b5f4e705d6ab17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationName: Notification
+  dialogBoxName: Dialog Box
+--- !u!114 &-5922177483081310151
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd38d9bb70aedfc48b5f4e705d6ab17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationName: Notification
+  dialogBoxName: Dialog Box
+--- !u!114 &-5118748863279308300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Assasine
+  m_Gender: 1
+  description: "The assassin is an unfailing assailant; most of his targets never
+    see him, \nand fewer still survive his first assault. The assassin stays in the
+    shadows\nuntil the time is right. When it is, he takes a single step, transporting
+    his way\nto his target, and unleashes a lethal flurry of attacks before making
+    his way\nback to safety. Those few that survive this attack are generally unable
+    to find\ntheir assassin, who has blended perfectly with the shadows by that point."
+  m_CreateCharacterImage: {fileID: 21300000, guid: ded5ebc6041612b468650ab56f650fda,
+    type: 3}
+  prefab: {fileID: 4278089479537840184, guid: 0aa3dc2dd97e8ac48a8f1a5d99bf2cc3, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Spawnpoint
+    typeIndex: 7
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-4182455895692971034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Warrior
+  m_Gender: 0
+  description: "Warriors are melee fighters highly trained in the art of weaponry.
+    \nThey are strong and quick on the battlefield. Depending on their specialization,\na
+    warrior can often deal very high damage or be tough to kill."
+  m_CreateCharacterImage: {fileID: 21300000, guid: a1cd7784299e422488a5f01d2a84d4b6,
+    type: 3}
+  prefab: {fileID: 1249811188861130618, guid: cc21e0b721af6554cb6d76410a471081, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Position
+    typeIndex: 7
+    stringValue: 
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-3599328334368881606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Warlock
+  m_Gender: 0
+  description: 'The warlock has access to several powerful abilities that he can
+    use over and
+
+    over. Though he can''t produce many magical effects, choosing
+    the right ones
+
+    creates a potent spellcaster who can hold his own in any
+    adventuring party.
+
+    Though he is a specialist in arcane combat, the warlock
+    can also gain bonuses
+
+    on a variety of skill checks and create numerous other
+    useful magical effects.'
+  m_CreateCharacterImage: {fileID: 21300000, guid: 8c829a1eec5812d4a85a915587d4e6e8,
+    type: 3}
+  prefab: {fileID: 2829627674438114898, guid: 914d344279c379f419cf479a1753d20a, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Position
+    typeIndex: 7
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-2570636500149860901
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Assassin
+  m_Gender: 1
+  description: "The assassin is an unfailing assailant; most of his targets never
+    see him, \nand fewer still survive his first assault. The assassin stays in the
+    shadows\nuntil the time is right. When it is, he takes a single step, transporting
+    his way\nto his target, and unleashes a lethal flurry of attacks before making
+    his way\nback to safety. Those few that survive this attack are generally unable
+    to find\ntheir assassin, who has blended perfectly with the shadows by that point."
+  m_CreateCharacterImage: {fileID: 21300000, guid: ded5ebc6041612b468650ab56f650fda,
+    type: 3}
+  prefab: {fileID: 4278089479537840184, guid: 0aa3dc2dd97e8ac48a8f1a5d99bf2cc3, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Position
+    typeIndex: 7
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-690325658682789464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92308ad2cbdf0948b160c4ee40c395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameInUse:
+    title: 
+    text: This name is already in use!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  nameIsEmpty:
+    title: 
+    text: The name field can't be empty!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  noCharacters:
+    title: 
+    text: No characters associated with this account.
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  deleteConfirmation:
+    title: Delete Character
+    text: Are you sure you want to delete this Character?
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+--- !u!114 &-174500339803960232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebc934edc065c944957f08bd249860c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accountKey: Account
+  provider: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d408f9f96fe2d98499fc1079344fcfff, type: 3}
+  m_Name: RPG Characters
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 7538579624054667655}
+  - {fileID: 3060279879285273310}
+  - {fileID: 3365482731853420205}
+  - {fileID: -5118748863279308300}
+  settings:
+  - {fileID: 7509736073060353907}
+  - {fileID: -690325658682789464}
+  - {fileID: 3217610530615777829}
+  - {fileID: -5922177483081310151}
+--- !u!114 &1278963069497680713
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fc586332a6b984685efb399be62e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectCharacterScene: Select Character
+  createCharacterScene: Create Character
+  playScene: Main Scene
+  debugMessages: 1
+--- !u!114 &1810944856447510898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92308ad2cbdf0948b160c4ee40c395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameInUse:
+    title: 
+    text: This name is already in use!
+    color: {r: 1, g: 0, b: 0, a: 1}
+    icon: {fileID: 0}
+    delay: 5
+    duration: 2
+    ignoreTimeScale: 1
+  nameIsEmpty:
+    title: 
+    text: The name field can't be empty!
+    color: {r: 1, g: 0, b: 0, a: 1}
+    icon: {fileID: 0}
+    delay: 5
+    duration: 2
+    ignoreTimeScale: 1
+  noCharacters:
+    title: 
+    text: No characters associated with this account.
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  deleteConfirmation:
+    title: Delete Character
+    text: Are you sure you want to delete this Character?
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+--- !u!114 &3060279879285273310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Warlock
+  m_Gender: 0
+  description: 'The warlock has access to several powerful abilities that he can
+    use over and
+
+    over. Though he can''t produce many magical effects, choosing
+    the right ones
+
+    creates a potent spellcaster who can hold his own in any
+    adventuring party.
+
+    Though he is a specialist in arcane combat, the warlock
+    can also gain bonuses
+
+    on a variety of skill checks and create numerous other
+    useful magical effects.'
+  m_CreateCharacterImage: {fileID: 21300000, guid: 8c829a1eec5812d4a85a915587d4e6e8,
+    type: 3}
+  prefab: {fileID: 2829627674438114898, guid: 914d344279c379f419cf479a1753d20a, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Spawnpoint
+    typeIndex: 7
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &3217610530615777829
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebc934edc065c944957f08bd249860c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accountKey: Account
+  provider: 0
+--- !u!114 &3365482731853420205
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Wizard
+  m_Gender: 1
+  description: "The wizard is the party's magical powerhouse. She can boost her party's
+    combat\neffectiveness, help her compatriots scout, and levy fiery magical assaults
+    at \nthe enemies. Depending on whether or not she specializes, she may have\naccess
+    to nearly any kind of arcane spell."
+  m_CreateCharacterImage: {fileID: 21300000, guid: d00019f9454db494cb2089b385d1b27f,
+    type: 3}
+  prefab: {fileID: 4342300396821548223, guid: bb0f0a9322c5911438bb794513b1730c, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Spawnpoint
+    typeIndex: 7
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &4835661454230857935
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92308ad2cbdf0948b160c4ee40c395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameInUse:
+    title: 
+    text: This name is already in use!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  nameIsEmpty:
+    title: 
+    text: The name field can't be empty!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  noCharacters:
+    title: 
+    text: No characters associated with this account.
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  deleteConfirmation:
+    title: Delete Character
+    text: Are you sure you want to delete this Character?
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+--- !u!114 &5517678381097499373
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Wizard
+  m_Gender: 1
+  description: "The wizard is the party's magical powerhouse. She can boost her party's
+    combat\neffectiveness, help her compatriots scout, and levy fiery magical assaults
+    at \nthe enemies. Depending on whether or not she specializes, she may have\naccess
+    to nearly any kind of arcane spell."
+  m_CreateCharacterImage: {fileID: 21300000, guid: d00019f9454db494cb2089b385d1b27f,
+    type: 3}
+  prefab: {fileID: 4342300396821548223, guid: bb0f0a9322c5911438bb794513b1730c, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Position
+    typeIndex: 7
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &5736717665175558226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd38d9bb70aedfc48b5f4e705d6ab17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationName: Notification
+  dialogBoxName: Dialog Box
+--- !u!114 &7509736073060353907
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fc586332a6b984685efb399be62e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectCharacterScene: Select Character
+  createCharacterScene: Create Character
+  playScene: Main Scene
+  debugMessages: 1
+--- !u!114 &7538579624054667655
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78c4d163c4f4aa46b1a2480d7bca40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProfessionName: Warrior
+  m_Gender: 0
+  description: "Warriors are melee fighters highly trained in the art of weaponry.
+    \nThey are strong and quick on the battlefield. Depending on their specialization,\na
+    warrior can often deal very high damage or be tough to kill."
+  m_CreateCharacterImage: {fileID: 21300000, guid: a1cd7784299e422488a5f01d2a84d4b6,
+    type: 3}
+  prefab: {fileID: 1249811188861130618, guid: cc21e0b721af6554cb6d76410a471081, type: 3}
+  m_Properties:
+  - name: Scene
+    typeIndex: 0
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Spawnpoint
+    typeIndex: 7
+    stringValue: Main Scene
+    intValue: 0
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}

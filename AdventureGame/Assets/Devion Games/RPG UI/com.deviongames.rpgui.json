@@ -1,0 +1,55 @@
+{
+    "name": "RPG UI",
+    "id": "com.deviongames.rpgui",
+    "assetPath":"Assets/Devion Games/RPG UI",
+    "version": "1.0.4",
+    "unityVersion": "2019.4.1",
+	"assetStore":"https://assetstore.unity.com/packages/2d/gui/rpg-ui-57793",
+    "downloadPath": "",
+    "author": "Konstantin Janson",
+    "email": "support@unitycoding.com",
+    "description": "This is an UI interface set for a rpg game. It includes source psd files and sliced png elements.",
+     "documentation": "https://deviongames.com/rpg-ui/",
+    "dependencies": 
+	[
+        "com.deviongames.utilities",
+		"com.deviongames.ui"
+	],
+    "changelogs": 
+    [
+        {
+            "version": "1.0.0",
+            "changes": 
+            [
+                "Initial Release"
+            ]
+        },
+		{
+            "version": "1.0.2",
+            "changes": 
+            [
+                "Upgrate to Unity 2019.1.1",
+				"Scripts update",
+				"Rework of example scene"
+            ]
+        },
+        {
+            "version": "1.0.3",
+            "changes": 
+            [
+                "Upgrate to Unity 2019.4.1",
+				"Scripts update",
+				"Fixed missing Script Reference"
+            ]
+        }, 
+        {
+            "version": "1.0.4",
+            "changes": 
+            [
+                "Updated to Devion Games website.",
+                "Changed asset path from Unitycoding/Package to Devion Games/Package",
+                "Updated Documentation"
+            ]
+        }
+    ]
+}

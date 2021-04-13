@@ -1,0 +1,460 @@
+﻿using System;
+using System.Reflection;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+//using UnityEngine.Profiling;
+
+namespace Plugins.GUI2
+{
+	public static class LayersEditor
+	{
+		const float stepAsideDist = 10; //the distance other layers step aside when dragging layer
+		private static readonly RectOffset layerBackgroundOverflow = new RectOffset(0,0,0,1);
+
+		//static int dragNum = -1;
+
+
+		public static IEnumerable<int> DrawInvertedLayers (
+			int count,
+			Action<int> onAdd = null,
+			Action<int> onRemove = null, 
+			Action<int,int> onMove = null,
+			string texturesFolder = "DPUI/Layers/")
+		{
+			foreach (int num in DrawLayers(count,
+				onAdd:n => onAdd(count-1-n), 
+				onRemove:n => onRemove(count-1-n), 
+				onMove:(n,t)=>onMove(count-1-n, count-1-t)))
+			{
+				yield return count-1-num;
+			}
+		}
+
+
+		public static IEnumerable<int> DrawLayers (
+			int count,
+			Action<int> onAdd = null,
+			Action<int> onRemove = null, 
+			Action<int,int> onMove = null,
+			string texturesFolder = "DPUI/Layers/")
+		{
+			if (Cell.current.subCounter != 0)
+				throw new Exception("Using non-empty cell for layers");
+
+
+			//finding drag num
+			int dragNum = -1;
+			if (DragDrop.obj != null  &&  
+				DragDrop.obj is DragDrop.DragObj  &&
+				((DragDrop.DragObj)DragDrop.obj).obj == Cell.current)
+					dragNum = ((DragDrop.DragObj)DragDrop.obj).id;
+			int dragTo = dragNum;
+			bool dragReleased = false;
+
+
+			//populating cells the usual way on layout
+			if (UI.layout)
+			{
+				for (int i=0; i<count; i++)
+				{
+					if (i != dragNum)
+						using (Cell.Line)
+							yield return i;
+				}
+
+				if (dragNum >= 0)
+					using (Cell.Line)
+						yield return dragNum;
+
+				using (Cell.LineStd) {};
+			}
+
+			//and more complicated stuff on repaint
+			else
+			{
+				//background
+				GUIStyle background = TexturesCache.GetElementStyle(texturesFolder+"AddPanelEmpty");
+				Draw.Element(background);
+				Cell cell = Cell.current;
+
+				//finding where the cell is dragged
+				if (!UI.layout  &&  dragNum >= 0)
+				{
+					if (UI.mousePos.y < cell.worldPosition.y) dragTo = 0;
+					else if (UI.mousePos.y > cell.worldPosition.y+cell.finalSize.y) dragTo = count-1;
+					else
+					{
+						int num = 0; //using counter to skip dragged field
+						for (int i=0; i<count; i++)
+						{
+							if (i == dragNum) continue; //cell is dragged - pos always within this cell
+
+							Cell layerCell = cell.subCells[i];
+
+							double start = layerCell.worldPosition.y;
+							double mid = layerCell.worldPosition.y + layerCell.finalSize.y/2;
+							double end = layerCell.worldPosition.y + layerCell.finalSize.y;
+
+							if (i==0 && UI.mousePos.y <= mid) { dragTo = 0; break; }
+							if (UI.mousePos.y > mid) dragTo = num+1;
+
+						//	if (UI.mousePos.y >= start-stepAsideDist  &&  UI.mousePos.y < mid) { dragTo = num; break; }
+						//	if (UI.mousePos.y >= mid  &&  UI.mousePos.y < end+stepAsideDist) { dragTo = num+1; break; }
+
+							num++;
+						}
+					}
+				}
+
+				//drawing cells
+				for (int i=0; i<count; i++)
+				{
+										//dragging
+						if (DragDrop.TryDrag(cell, i, UI.mousePos))
+						{
+							//Cell.current.worldPosition = DragDrop.initialRect.position + DragDrop.totalDelta;
+							//Cell.current.CalculateSubRects(); //re-layout cell
+						}
+
+						dragReleased = dragReleased || DragDrop.TryRelease(cell, i, UI.mousePos);
+
+						//DragDrop.TryStart(cell, i, UI.mousePos, Cell.current.Rect); // dragNum = i; will not reset on child field drag
+
+					if (i != dragNum)
+					using (Cell.Line)
+					{
+						DragDrop.TryStart(cell, i, UI.mousePos, Cell.current.Rect); // dragNum = i; will not reset on child field drag
+
+						//offset from dragTo to dragNum
+						if (i>=dragTo && i<dragNum)
+						{
+							Cell.current.worldPosition.y += stepAsideDist;
+							Cell.current.CalculateSubRects(); //re-layout cell
+						}
+						if (i<=dragTo && i>dragNum)
+						{
+							Cell.current.worldPosition.y -= stepAsideDist;
+							Cell.current.CalculateSubRects(); //re-layout cell
+						}
+
+						//background
+						GUIStyle style;
+						if (i==0) style = TexturesCache.GetElementStyle(texturesFolder+"Top", overflow:layerBackgroundOverflow);
+						else if (i==count-1) style = TexturesCache.GetElementStyle(texturesFolder+"Bot", overflow:layerBackgroundOverflow);
+						else style = TexturesCache.GetElementStyle(texturesFolder+"Mid", overflow:layerBackgroundOverflow);
+						Draw.Element(style);
+
+						//drawing
+						
+						yield return i;
+					}
+				}
+
+
+				//drawing dragged layer
+				if (dragNum >= 0)
+				{
+					using (Cell.Custom(0,0))  
+					{
+						//Cell.current.worldPosition = DragDrop.initialRect.position + DragDrop.totalDelta;
+						//Cell.current.CalculateSubRects(); //re-layout cell
+
+						if (!UI.layout)
+						{
+							//can use finalsize since it will be re-layouted anyways
+							Cell.current.worldPosition = DragDrop.initialRect.position + DragDrop.totalDelta;
+							Cell.current.finalSize.x = cell.finalSize.x;
+							Cell.current.CalculateSubRects(); //re-layout cell
+						}
+
+						Draw.DebugRect();
+						yield return dragNum;
+					}
+				}
+
+
+				//add/remove
+				bool draggedOnRemoveCell = false;
+				using (Cell.LineStd)
+				{
+					Cell.current.worldPosition.y = cell.worldPosition.y + cell.finalSize.y - Cell.lineHeight;
+
+					if (dragNum < 0) //add when drag is disabled
+					{
+						GUIStyle style = count!=0 ?
+							TexturesCache.GetElementStyle(texturesFolder+"AddPanel") :
+							TexturesCache.GetElementStyle(texturesFolder+"AddPanelEmpty");
+						Draw.Element(style);
+
+						if (Draw.Button(TexturesCache.GetTexture(texturesFolder+"AddIcon"), visible:false))
+						{
+							UI.MarkChanged();
+							onAdd(count);
+
+							Event.current.Use(); //gui structure changed. Not necessary since button is used
+						}
+					}
+
+					else //displaying remove when drag is enabled
+					{
+						Rect cellRect = Cell.current.Rect;
+						draggedOnRemoveCell = cellRect.Contains(UI.mousePos);
+						
+						GUIStyle style = draggedOnRemoveCell ?
+							TexturesCache.GetElementStyle(texturesFolder+"RemovePanelActive") :
+							TexturesCache.GetElementStyle(texturesFolder+"RemovePanel");
+						Draw.Element(style);
+						Draw.Icon(TexturesCache.GetTexture(texturesFolder+"RemoveIcon"));
+					}
+				}
+
+				//releasing drag
+				if (dragNum>=0 && dragReleased)
+				{
+					if (draggedOnRemoveCell)
+					{
+						UI.MarkChanged();
+						onRemove(dragNum); //!invert ? dragNum : count-1-dragNum;
+
+						Event.current.Use(); //to remove extra child in flush
+					}
+
+					else if (onMove != null && dragNum!=dragTo)  //switch is the last - it conflicts with remove
+					{
+						UI.MarkChanged();
+						onMove(dragNum, dragTo); //!invert ? dragNum : count-1-dragNum,  //!invert ? dragTo : count-1-dragTo);
+					}
+				}
+			}
+
+				//layers
+			/*	Cell layersCell = UI.Group(Size.line);
+				using (layersCell)
+				{
+					//layout - creates the default cell positions
+					if (!UI.repaint)
+					{
+						for (int i=0; i<count; i++)
+							using (UI.Group(Size.line))
+								yield return i;
+					}
+
+					//repaint
+					else
+					{
+						//get all cells
+						for (int i=0; i<count; i++)
+							//cells.Add(cell.GetChildCell());
+							Cell.GetCell(); //performing necessary get applications
+						List<Cell> cells = layersCell.children;
+
+						//finding dragged cell (CheckDrag could be called before drawing layer)
+						dragNum = -1;
+						for (int i=0; i<count; i++)
+							if (DragDrop.CheckDrag(cells[i]))
+							{
+								dragNum = i;
+								dragCell = cells[i];
+							}
+						
+						//finding where the cell is dragged
+						dragTo = dragNum;
+						if (dragCell != null)
+						{
+							float mousePosY = UI.Settings.current.scrollZoom.ToInternal(Event.current.mousePosition).y;
+						
+							if (mousePosY < cell.dstSize.y.pixels) dragTo = 0;
+							else if (mousePosY > cell.dstSize.y.pixels+cell.dstSize.height.pixels) dragTo = count-1;
+							else
+							{
+								int num = 0; //using counter to skip dragged field
+								for (int i=0; i<count; i++)
+								{
+									if (i == dragNum) continue; //cell is dragged - pos always within this cell
+
+									Cell layerCell = cells[i];
+
+									double start = layerCell.dstSize.y.pixels;
+									double mid = layerCell.dstSize.y.pixels + cells[i].dstSize.height.pixels/2;
+									double end = layerCell.dstSize.y.pixels + cells[i].dstSize.height.pixels;
+
+									//Cell tmp = UI.Empty(Size.Custom(-30, mousePosY-5, 10, 60));
+									//tmp.DrawBackground();
+									if (mousePosY >= start-stepAsideDist  &&  mousePosY < mid) { dragTo = num; break; }
+									if (mousePosY >= mid  &&  mousePosY < end+stepAsideDist) { dragTo = num+1; break; }
+
+									num++;
+								}
+							}
+						}
+
+						//offset all of the cells from dragTo to dragNum
+						if (dragCell != null  &&  dragTo != dragNum)  //&& !draggedOnRemoveCell
+						{
+							Rect layersRect = layersCell.GetRect(usePadding:false);
+							layersRect.height+=10; layersRect.y-=10;
+							if (layersRect.Contains(Event.current.mousePosition))
+							{
+								if (dragNum < dragTo)
+								for (int i=dragNum+1; i<dragTo+1; i++)
+								{
+							
+
+									Cell layerCell = cells[i];
+									layerCell.srcSize = Size.Custom(layerCell.dstSize); //this will fix it's calculated size in pixels
+									layerCell.srcSize.y.pixels -= stepAsideDist;
+
+									//re-applying layout
+									UI.repaint=false; 
+									layerCell.Layout(); 
+									UI.repaint=true;
+								}
+
+								else
+								for (int i=dragTo; i<dragNum; i++)
+								{
+									Cell layerCell = cells[i];
+									layerCell.srcSize = Size.Custom(layerCell.dstSize);
+									layerCell.srcSize.y.pixels += stepAsideDist;
+							
+									//re-applying layout
+									UI.repaint=false; 
+									layerCell.Layout(); 
+									UI.repaint=true;
+								}
+							}
+						}
+
+						//drawing non-dragged cells
+						for (int i=0; i<count; i++)
+						{
+							if (i==dragNum) continue;
+							Cell layerCell = cells[i];
+
+							layerCell.SetActive();
+							using (layerCell)
+							{
+								//background
+								GUIStyle style;
+								if (i==0) style = TexturesCache.GetElementStyle(texturesFolder+"Top");
+								else if (i==count-1) style = TexturesCache.GetElementStyle(texturesFolder+"Bot");
+								else style = TexturesCache.GetElementStyle(texturesFolder+"Mid");
+
+								layerCell.padding = new Padding(0,0,-1,0);
+								UI.Element(style, Cell.current, usePadding:true);
+
+								//drawing layer
+								yield return !invert ? 
+									i : 
+									count-1-i;
+							}
+						}
+
+						//starting dragging cell
+						for (int i=0; i<count; i++)
+						{
+							if (i==dragNum) continue;
+							Cell layerCell = cells[i];
+
+							if (DragDrop.CheckStart(layerCell))
+								yield break;
+						}
+					}
+				}
+
+
+				//add/remove
+				using (UI.Group(Size.fixedLine))
+				{
+					Cell buttonCell = UI.Empty(Size.RowPixels(65)); //preparing button cell to avoid creaing/removing it on drag start/stop
+
+					if (dragCell == null) //add when drag is disabled
+					{
+						GUIStyle style = count!=0 ?
+							TexturesCache.GetElementStyle(texturesFolder+"AddPanel") :
+							TexturesCache.GetElementStyle(texturesFolder+"AddPanelEmpty");
+						UI.Element(style, Cell.current);
+
+						UI.Icon(TexturesCache.GetTexture(texturesFolder+"AddIcon"), buttonCell);
+						if (UI.Button(null, cell:buttonCell, style:GUIStyle.none))
+						{
+							cell.WriteUndo();
+							onAdd(count);
+							Cell.current.SetChange();
+
+							Event.current.Use(); //gui structure changed. Not necessary since button is used
+						}
+					}
+
+					else //remove when drag is enabled
+					{
+						Rect cellRect = Cell.current.GetRect(usePadding:false, pixelPerfect:false);
+						draggedOnRemoveCell = cellRect.Contains(Event.current.mousePosition);
+						
+						GUIStyle style = draggedOnRemoveCell ?
+							TexturesCache.GetElementStyle(texturesFolder+"RemovePanelActive") :
+							TexturesCache.GetElementStyle(texturesFolder+"RemovePanel");
+						UI.Element(style, Cell.current);
+						UI.Icon(TexturesCache.GetTexture(texturesFolder+"RemoveIcon"), buttonCell);
+					}
+				}
+
+				//drawing dragged cell
+				if (dragCell != null)
+				{
+					dragCell.SetActive();
+					dragCell.name = "DragCell";
+					using (dragCell)
+					{
+						dragCell.srcSize = Size.Custom(Cell.current.dstSize);
+						dragCell.srcSize.x.pixels += DragDrop.totalDelta.x / UI.Settings.current.scrollZoom.zoom;
+						dragCell.srcSize.y.pixels += DragDrop.totalDelta.y / UI.Settings.current.scrollZoom.zoom;
+
+						//re-applying layout
+						UI.repaint=false; 
+						dragCell.Layout(); 
+						UI.repaint=true;
+
+						//background
+						GUIStyle bkStyle = TexturesCache.GetElementStyle(texturesFolder+"Mid");
+						UI.Element(bkStyle, dragCell);
+
+						//drawing layer
+						yield return !invert ? 
+							dragNum : 
+							count-1-dragNum; 
+					}
+				}
+
+				//releasing drag
+				if (dragCell!=null && DragDrop.CheckRelease(dragCell))
+				{
+						if (draggedOnRemoveCell)
+						{
+							cell.WriteUndo();
+							onRemove(!invert ? 
+								dragNum : 
+								count-1-dragNum);
+							Cell.current.SetChange();
+
+							Event.current.Use(); //to remove extra child in flush
+
+							UI.repaint=false; 
+							cell.Layout(); 
+							UI.repaint=true;
+						}
+
+						else if (onMove != null && dragNum!=dragTo)  //switch is the last - it conflicts with remove
+						{
+							cell.WriteUndo();
+							onMove(//dragNum, dragTo);
+								!invert ? dragNum : count-1-dragNum, 
+								!invert ? dragTo : count-1-dragTo);
+							Cell.current.SetChange();
+						}
+				}
+			}*/
+		}
+	}
+}
