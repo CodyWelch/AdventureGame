@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Interactable : MonoBehaviour
 {
@@ -10,8 +11,17 @@ public class Interactable : MonoBehaviour
 
     bool isFocus = false;
     Transform player;
-
+    public NavMeshAgent playerAgent;
     bool hasInteracted = false;
+
+    public virtual void MoveToInteraction(NavMeshAgent playerAgent)
+    {
+        this.playerAgent = playerAgent;
+        playerAgent.stoppingDistance = 2f;
+        playerAgent.destination = this.transform.position;
+
+        Interact();
+    }
 
     public virtual void Interact()
     {

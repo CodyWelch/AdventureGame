@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(PlayerMotor))]
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     public Interactable focus;
@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     PlayerMotor motor;
     public LayerMask movementMask;
     public bool isActive;
+    public Quest quest;
 
     void Start()
     {

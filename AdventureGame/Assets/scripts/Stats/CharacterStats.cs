@@ -7,6 +7,7 @@ public class CharacterStats : MonoBehaviour
 
     public Stat damage;
     public Stat armor;
+    public int experience;
 
     private void Awake()
     {

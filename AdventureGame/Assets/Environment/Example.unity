@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 607406313}
-  m_IndirectSpecularColor: {r: 0.18329301, g: 0.22892618, b: 0.30629778, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -969,6 +969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1.47
   interactionTransform: {fileID: 163510181}
+  playerAgent: {fileID: 0}
   item: {fileID: 11400000, guid: e6175e8406bc77442afd6a162718e31c, type: 2}
 --- !u!1 &211118329
 GameObject:
@@ -1778,6 +1779,7 @@ GameObject:
   - component: {fileID: 405675635}
   - component: {fileID: 405675634}
   - component: {fileID: 405675638}
+  - component: {fileID: 405675639}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -1845,7 +1847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405675633}
   m_LocalRotation: {x: -0, y: -0.36133432, z: -0, w: 0.9324364}
-  m_LocalPosition: {x: -3.4390461, y: -4.222, z: 10.611118}
+  m_LocalPosition: {x: -3.4390461, y: -0.9, z: 10.611118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462011908}
@@ -1866,12 +1868,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 405675637}
+  playerAgent: {fileID: 0}
   dialogue:
     name: Asper
     sentences:
-    - Greetings,
-    - There's danger about.
-    - The wolves killed my family :(
+    - Greetings, I am Asper. This here is my home. It's quiet around here, most of
+      the time. There is danger about though so don't let your guard down.
+    - 'I see you''ve brought the letter. My request is simple enough I think. My
+      wife and child were lost to wolves across the river there. '
+    - 'They each wore an amulet, my daughter wore one of silver and my wife a golden
+      one.  If you find them please bring them back to me.   '
+--- !u!114 &405675639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405675633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb2707da9c4af0478bca8b409a8853e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    isActive: 0
+    title: Lost Treasure
+    description: Retrieve the lost silver amulet and lost gold amulet in the forest
+      of Kyr
+    goldReward: 100
+    expReward: 100
+  player: {fileID: 2085943200}
+  questWindow: {fileID: 0}
+  titleText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  experienceText: {fileID: 0}
+  goldText: {fileID: 0}
 --- !u!1 &411834023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4286,6 +4317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1.47
   interactionTransform: {fileID: 787129810}
+  playerAgent: {fileID: 0}
   item: {fileID: 11400000, guid: 1f2c555ab19d0ad41bdd89e86fc12c8c, type: 2}
 --- !u!65 &787129807
 BoxCollider:
@@ -4347,6 +4379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1.47
   interactionTransform: {fileID: 806095916}
+  playerAgent: {fileID: 0}
   item: {fileID: 11400000, guid: d802c762dabe39c48a9df99c5c1d17a9, type: 2}
 --- !u!65 &806095913
 BoxCollider:
@@ -5584,7 +5617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119529076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3.322, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 163510181}
@@ -6310,6 +6343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 1995282543}
+  playerAgent: {fileID: 0}
 --- !u!1 &1262453585
 GameObject:
   m_ObjectHideFlags: 0
@@ -7033,6 +7067,82 @@ Transform:
   m_Father: {fileID: 1035026196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1394122685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394122688}
+  - component: {fileID: 1394122687}
+  - component: {fileID: 1394122686}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
+--- !u!154 &1394122686
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394122685}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: 9386f4562fcb72d40ab7ac3747deda32, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &1394122687
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394122685}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 9386f4562fcb72d40ab7ac3747deda32, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 9985d98b310e54008b8f2c550ed9412c, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+--- !u!4 &1394122688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394122685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1404968605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7314,7 +7424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502916414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.331, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 767033481}
@@ -8599,6 +8709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 1742149582}
+  playerAgent: {fileID: 0}
   dialogue:
     name: Asper
     sentences:
@@ -8845,7 +8956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783145704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.43, y: -3.34, z: -3.3}
+  m_LocalPosition: {x: -10.43, y: -0.017999887, z: -3.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1496939765}
@@ -8883,6 +8994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 4
   interactionTransform: {fileID: 1783145709}
+  playerAgent: {fileID: 0}
 --- !u!114 &1783145712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9398,6 +9510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 1915413202}
+  playerAgent: {fileID: 0}
   dialogue:
     name: Asper
     sentences:
@@ -10288,7 +10401,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085943195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.49, y: -4.641, z: 12.62}
+  m_LocalPosition: {x: -11.49, y: -0.71, z: 12.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5006512735367604456}
@@ -10344,6 +10457,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   isActive: 0
+  quest:
+    isActive: 0
+    title: 
+    description: 
+    goldReward: 0
+    expReward: 0
 --- !u!114 &2085943201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10385,6 +10504,12 @@ MonoBehaviour:
     baseValue: 5
   armor:
     baseValue: 0
+  quest:
+    isActive: 0
+    title: 
+    description: 
+    goldReward: 0
+    expReward: 0
 --- !u!114 &2085943204
 MonoBehaviour:
   m_ObjectHideFlags: 0

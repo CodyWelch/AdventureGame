@@ -7,12 +7,15 @@ using UnityEngine.AI;
 public class Enemy : Interactable
 {
     PlayerManager playerManager;
-    CharacterStats myStats;
+    public CharacterStats myStats;
+
+
 
     private void Start()
     {
         playerManager = PlayerManager.instance;
         myStats = GetComponent<CharacterStats>();
+        myStats.experience = 100;
     }
 
     public override void Interact()
