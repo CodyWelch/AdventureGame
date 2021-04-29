@@ -2,31 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillGoal : QuestGoal
+namespace myRPG
 {
-    public int EnemyID { get; set; }
 
-    public KillGoal(int enemyID, string description, bool completed, int currentAmount, int requiredAmount)
+    public class KillGoal : QuestGoal
     {
-        this.EnemyID = enemyID;
-        this.Description = description;
-        this.Completed = completed;
-        this.CurrentAmount = currentAmount;
-        this.RequiredAmount = requiredAmount;
-    }
+        public int EnemyID { get; set; }
 
-    public override void Init()
-    {
-        base.Init();
-        CombatEvents.OnEnemyDeath += EnemyDied;
-    }
-
-    void EnemyDied(EnemyStats enemy)
-    {
-        if(enemy.ID == this.EnemyID)
+        public KillGoal(int enemyID, string description, bool completed, int currentAmount, int requiredAmount)
         {
-            this.CurrentAmount++;
-            Evaluate() ;
+            this.EnemyID = enemyID;
+            this.Description = description;
+            this.Completed = completed;
+            this.CurrentAmount = currentAmount;
+            this.RequiredAmount = requiredAmount;
+        }
+
+        public override void Init()
+        {
+            base.Init();
+            CombatEvents.OnEnemyDeath += EnemyDied;
+        }
+
+        void EnemyDied(EnemyStats enemy)
+        {
+            if (enemy.ID == this.EnemyID)
+            {
+                this.CurrentAmount++;
+                Evaluate();
+            }
         }
     }
 }
+
+

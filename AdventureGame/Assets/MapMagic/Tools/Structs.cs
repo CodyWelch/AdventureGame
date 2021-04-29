@@ -368,7 +368,7 @@ namespace Den.Tools
 		public Coord offset;
 		public Coord size;
 
-		public enum TileMode { Clamp, Tile, PingPong } //see Tile region
+		public enum TileMode { Clamp=0, Tile=1, PingPong=2 } //see Tile region
 
 		//public int radius; //not related with size, because a clamped CoordRect should have non-changed radius
 
@@ -936,13 +936,14 @@ namespace Den.Tools
 
 
 	[Serializable]
+	[StructLayout (LayoutKind.Sequential)] //to pass to native
 	public struct Vector2D : IEquatable<Vector2D> 
 	{
-		public const float kEpsilon = 1E-05F;
-		public const float kEpsilonNormalSqrt = 1E-15F;
-
 		public float x;
 		public float z;
+
+		public const float kEpsilon = 1E-05F;
+		public const float kEpsilonNormalSqrt = 1E-15F;
 
 		public float this[int c] { get => c==0 ? x : z;  set { if (x==0) x=value; else z=value; } }
 

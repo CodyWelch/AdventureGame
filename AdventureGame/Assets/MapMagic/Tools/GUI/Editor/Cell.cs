@@ -402,6 +402,9 @@ namespace Den.Tools.GUI
 				//	throw new Exception("Cell: Trying to de-activate cell that is currently non-active");
 
 				int activeStackCount = activeStack.Count;
+				if (activeStackCount == 0)
+					return; //otherwise EditorUtility.DisplayDialog will log an error
+
 				activeStack.RemoveAt(activeStackCount-1); //removing last
 				if (activeStackCount > 1) //if there's something in stack after remove
 					current = activeStack[activeStackCount-2]; //then assigning the new last one

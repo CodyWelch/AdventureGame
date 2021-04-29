@@ -397,6 +397,7 @@ namespace Den.Tools.GUI
 				else if (type == typeof(Transform)) return Field((Transform)val, label, true);
 				else if (type == typeof(GameObject)) return Field((Transform)val, label, true);
 				else if (type == typeof(Material)) return Field((Material)val, label, true);
+				else if (type == typeof(TerrainLayer)) return Field((TerrainLayer)val, label, true);
 				else if (typeof(UnityEngine.Object).IsAssignableFrom(type)) return ObjectField((UnityEngine.Object)val, type, true);
 				
 				return val;
@@ -552,6 +553,11 @@ namespace Den.Tools.GUI
 			public static void Field (ref Texture2D val, string label, bool allowSceneObject=false) { val = Field(val, label, textureFieldFn, allowSceneObject); }
 			private static readonly Func<Rect,Texture2D,bool,Texture2D> textureFieldFn = ObjectFieldFn;
 
+			public static TerrainLayer Field (TerrainLayer val, bool allowSceneObject=false) { return Field(val, terrainLayerFieldFn, allowSceneObject); } 
+			public static void Field (ref TerrainLayer val, bool allowSceneObject=false) { val = Field(val, terrainLayerFieldFn, allowSceneObject); } 
+			public static TerrainLayer Field (TerrainLayer val, string label, bool allowSceneObject=false) { return Field(val, label, terrainLayerFieldFn, allowSceneObject); }
+			public static void Field (ref TerrainLayer val, string label, bool allowSceneObject=false) { val = Field(val, label, terrainLayerFieldFn, allowSceneObject); }
+			private static readonly Func<Rect,TerrainLayer,bool,TerrainLayer> terrainLayerFieldFn = ObjectFieldFn;
 
 			public static Material Field (Material val, bool allowSceneObject=false) { return Field(val, materialFieldFn, allowSceneObject); } 
 			public static void Field (ref Material val, bool allowSceneObject=false) { val = Field(val, materialFieldFn, allowSceneObject); } 
@@ -1134,9 +1140,10 @@ namespace Den.Tools.GUI
 
 		#region Class
 
-			public static void Class (object obj, string category=null, Action<FieldInfo,Cell> additionalAction=null) 
+			public static bool Class (object obj, string category=null, Action<FieldInfo,Cell> additionalAction=null) 
 			/// Draws all values of the class marked with Val attribute (and category)
 			/// if additionalAction defined performs it for each fo the fields
+			/// Returns true if anything has been drawn, false if empty
 			{
 				Type type = obj.GetType();
 
@@ -1158,6 +1165,8 @@ namespace Den.Tools.GUI
 					}
 					finally { cell.Dispose(); }
 				}
+
+				return attributes.Length != 0;
 			}
 
 
@@ -1529,7 +1538,8 @@ namespace Den.Tools.GUI
 			}
 
 
-			public static void Editor (dynamic obj, object[] args=null, string cat=null)
+			public static bool Editor (dynamic obj, object[] args=null, string cat=null)
+			/// Draws special class editor. Returns false if no editor found
 			{
 				if (cachedEditors == null)
 					PopulateCachedEditors();
@@ -1537,6 +1547,8 @@ namespace Den.Tools.GUI
 				Type type = obj.GetType();
 				cachedEditors.TryGetValue((type, cat), out Delegate editorAction);
 				if (editorAction != null) Invoke(editorAction, obj, args);
+
+				return editorAction != null;
 			}
 
 			private static void Invoke<T> (Delegate action, T obj, object[] args)  
@@ -2203,7 +2215,7 @@ namespace Den.Tools.GUI
 			}
 
 
-			public static void BackgroundRightLabel (string label, GUIStyle style=null, GUIStyle backStyle=null)
+			public static void BackgroundRightLabel (string label, GUIStyle style=null, GUIStyle backStyle=null, float rightOffset=4)
 			{
 				if (UI.current.layout) return;
 				if (UI.current.optimizeElements && !UI.current.IsInWindow()) return;
@@ -2214,7 +2226,7 @@ namespace Den.Tools.GUI
 				float width = style.CalcSize( new GUIContent(label) ).x;
 				rect.x += rect.width - width;
 				rect.width = width;
-				rect.x -= 4 * (UI.current.scrollZoom!=null ? UI.current.scrollZoom.zoom : 0);
+				rect.x -= rightOffset * (UI.current.scrollZoom!=null ? UI.current.scrollZoom.zoom : 0);
 
 				Rect backRect = rect;
 				backRect.yMin += 2 * (UI.current.scrollZoom!=null ? UI.current.scrollZoom.zoom : 0);

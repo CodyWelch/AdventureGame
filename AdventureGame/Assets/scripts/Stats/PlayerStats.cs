@@ -2,32 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStats : CharacterStats
+namespace myRPG
+
 {
-    public Quest quest;
-
-    void Start()
+    public class PlayerStats : CharacterStats
     {
-        EquipmentManager.instance.onEquipmentChanged += OnEquipmentChanged;
-    }
+        public Quest quest;
 
-    void OnEquipmentChanged (Equipment newItem, Equipment oldItem)
-    {
-        if(newItem != null)
+        void Start()
         {
+            EquipmentManager.instance.onEquipmentChanged += OnEquipmentChanged;
+        }
 
-            armor.AddModifier(newItem.armorModifier);
-            damage.AddModifier(newItem.damageModifier);
-        }
-        if (oldItem != null)
+        void OnEquipmentChanged(Equipment newItem, Equipment oldItem)
         {
-            armor.RemoveModifier(oldItem.armorModifier);
-            damage.RemoveModifier(oldItem.damageModifier);
+            if (newItem != null)
+            {
+
+                armor.AddModifier(newItem.armorModifier);
+                damage.AddModifier(newItem.damageModifier);
+            }
+            if (oldItem != null)
+            {
+                armor.RemoveModifier(oldItem.armorModifier);
+                damage.RemoveModifier(oldItem.damageModifier);
+            }
         }
-    }
-    public override void Die()
-    {
-        base.Die();
-        PlayerManager.instance.KillPlayer();
+        public override void Die()
+        {
+            base.Die();
+            PlayerManager.instance.KillPlayer();
+        }
     }
 }

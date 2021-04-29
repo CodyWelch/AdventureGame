@@ -24,8 +24,8 @@ namespace Den.Tools
 			if (!src.IsReadable()) src = src.ReadableClone();  //texture should be readable to uncompress
 			if (src.format.IsCompressed()) src = src.UncompressedClone();  
 
-			//if (src.width != dstArr.width  ||  src.height != dstArr.height)
-			//	src = src.ResizedClone(dstArr.width, dstArr.height);
+			if (src.width != dstArr.width  ||  src.height != dstArr.height)
+				src = src.ResizedClone(dstArr.width, dstArr.height);
 			
 			#if UNITY_EDITOR
 				
@@ -51,11 +51,11 @@ namespace Den.Tools
 			
 			if (!src.IsReadable()) src = src.ReadableClone();
 			if (src.format.IsCompressed()) src = src.UncompressedClone(); 
-			//if (src.width != dstArr.width  ||  src.height != dstArr.height) src = src.ResizedClone(dstArr.width, dstArr.height);
+			if (src.width != dstArr.width  ||  src.height != dstArr.height) src = src.ResizedClone(dstArr.width, dstArr.height);
 
 			if (!alpha.IsReadable()) alpha = alpha.ReadableClone();
 			//if (!alpha.format.IsCompressed()) alpha = alpha.UncompressedClone();  //no need to change alpha format, we will read pixels anyways
-			//if (alpha.width != dstArr.width  ||  alpha.height != dstArr.height) alpha = alpha.ResizedClone(dstArr.width, dstArr.height);
+			if (alpha.width != dstArr.width  ||  alpha.height != dstArr.height) alpha = alpha.ResizedClone(dstArr.width, dstArr.height);
 
 
 			Texture2D tmp = new Texture2D(src.width, src.height, TextureFormat.RGBA32, true, src.IsLinear());
@@ -116,8 +116,8 @@ namespace Den.Tools
 			Texture2D tmpTex = srcArr.GetTexture(srcCh, readable:true);
 			if (tmpTex.format.IsCompressed()) tmpTex = tmpTex.UncompressedClone();  //uncompress to change format
 
-			//if (tmpTex.width != dst.width  ||  tmpTex.height != dst.height)
-			//	tmpTex = tmpTex.ResizedClone(dst.width, dst.height);
+			if (tmpTex.width != dst.width  ||  tmpTex.height != dst.height)
+				tmpTex = tmpTex.ResizedClone(dst.width, dst.height);
 
 			#if UNITY_EDITOR
 

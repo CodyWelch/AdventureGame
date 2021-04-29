@@ -2,45 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryUI : MonoBehaviour
+namespace myRPG
 {
-    public Transform itemsParent;
-    public GameObject inventoryUI;
-
-    Inventory inventory;
-
-    InventorySlot[] slots;
-
-    // Start is called before the first frame update
-    void Start()
+    public class InventoryUI : MonoBehaviour
     {
-        inventory = Inventory.instance;
-        inventory.onItemChangedCallback += UpdateUI;
+        public Transform itemsParent;
+        public GameObject inventoryUI;
 
-        slots = itemsParent.GetComponentsInChildren<InventorySlot>();
-    }
+        Inventory inventory;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetButtonDown("Inventory"))
+        InventorySlot[] slots;
+
+        // Start is called before the first frame update
+        void Start()
         {
-            inventoryUI.SetActive(!inventoryUI.activeSelf);
+            inventory = Inventory.instance;
+            inventory.onItemChangedCallback += UpdateUI;
+
+            slots = itemsParent.GetComponentsInChildren<InventorySlot>();
         }
-    }
-    void UpdateUI()
-    {
-       // Debug.Log("UPDATING UI");
-       for (int i =0; i < slots.Length; i++)
+
+        // Update is called once per frame
+        void Update()
         {
-            if(i < inventory.items.Count)
+            if (Input.GetButtonDown("Inventory"))
             {
-                slots[i].AddItem(inventory.items[i]);
-            }
-            else
-            {
-                slots[i].ClearSlot();
+                inventoryUI.SetActive(!inventoryUI.activeSelf);
             }
         }
+        void UpdateUI()
+        {
+            // Debug.Log("UPDATING UI");
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (i < inventory.items.Count)
+                {
+                    slots[i].AddItem(inventory.items[i]);
+                }
+                else
+                {
+                    slots[i].ClearSlot();
+                }
+            }
+        }
     }
+
 }

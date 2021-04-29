@@ -3,60 +3,64 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(CharacterStats))]
-public class Enemy : Interactable
+namespace myRPG
 {
-    PlayerManager playerManager;
-    public CharacterStats myStats;
 
-
-
-    private void Start()
+    [RequireComponent(typeof(CharacterStats))]
+    public class Enemy : Interactable
     {
-        playerManager = PlayerManager.instance;
-        myStats = GetComponent<CharacterStats>();
-        myStats.experience = 100;
-    }
+        PlayerManager playerManager;
+        public CharacterStats myStats;
 
-    public override void Interact()
-    {
-        base.Interact();
-        CharacterCombat playerCombat = playerManager.player.GetComponent<CharacterCombat>();
-        if(playerCombat != null)
+
+
+        private void Start()
         {
-            playerCombat.Attack(myStats);
+            playerManager = PlayerManager.instance;
+            myStats = GetComponent<CharacterStats>();
+            myStats.experience = 100;
         }
 
-        // attack the enemy
-    }
-    /*
-      public NavMeshAgent agent;
+        public override void Interact()
+        {
+            base.Interact();
+            CharacterCombat playerCombat = playerManager.player.GetComponent<CharacterCombat>();
+            if (playerCombat != null)
+            {
+                playerCombat.Attack(myStats);
+            }
 
-      public bool isActive;
-      public float agroRange;
+            // attack the enemy
+        }
+        /*
+          public NavMeshAgent agent;
 
-   //   public GameObject player;
+          public bool isActive;
+          public float agroRange;
 
-      public void Awake()
-      {
-          isActive = false;
-          agroRange = 10.0f;
-      }
+       //   public GameObject player;
 
-      void Update()
-      {
-
-
-        if (agroRange >= Vector3.Distance(player.GetComponent<Transform>().position, this.GetComponent<Transform>().position))
-           { isActive = true;
-          }
-          else
+          public void Awake()
           {
               isActive = false;
+              agroRange = 10.0f;
           }
 
-          if (isActive)
+          void Update()
           {
-              agent.SetDestination(player.GetComponent<Transform>().position);
-          }*/
+
+
+            if (agroRange >= Vector3.Distance(player.GetComponent<Transform>().position, this.GetComponent<Transform>().position))
+               { isActive = true;
+              }
+              else
+              {
+                  isActive = false;
+              }
+
+              if (isActive)
+              {
+                  agent.SetDestination(player.GetComponent<Transform>().position);
+              }*/
+    }
 }

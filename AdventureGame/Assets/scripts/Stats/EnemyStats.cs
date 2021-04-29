@@ -2,21 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyStats : CharacterStats
+namespace myRPG
 {
-    public int ID;
-    public void Start()
+    public class EnemyStats : CharacterStats
     {
-        ID = 0;
-    }
-    public override void Die()
-    {
-        base.Die();
-        CombatEvents.EnemyDied(this);
+        public int ID;
+        public void Start()
+        {
+            ID = 0;
+        }
+        public override void Die()
+        {
+            base.Die();
+            CombatEvents.EnemyDied(this);
 
-        // add ragdoll effect / death animation
+            // add ragdoll effect / death animation
 
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
+
     }
 
 }
+
+

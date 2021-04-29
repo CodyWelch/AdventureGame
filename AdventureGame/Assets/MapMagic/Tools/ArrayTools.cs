@@ -111,7 +111,7 @@ namespace Den.Tools
 			}
 
 			static public void Insert<T> (ref T[] array, int pos, T element) { array = Insert(array, pos, element); }
-			static public void Insert<T> (ref T[] array, int pos, Func<int,T> createElement=null) { array = Insert(array, pos, createElement(pos)); }
+			static public void Insert<T> (ref T[] array, int pos, Func<int,T> createElement) { array = Insert(array, pos, createElement(pos)); }
 			static public T[] Insert<T> (T[] array, int pos, T element)
 			{
 				if (array==null || array.Length==0) 

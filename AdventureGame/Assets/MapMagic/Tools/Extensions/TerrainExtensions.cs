@@ -82,7 +82,7 @@ namespace Den.Tools
 		}
 
 
-		public static CoordRect HeightAlignedPixelRect (this Terrain terrain, Vector2D worldPos, Vector2D worldSize, TerrainControlType controlType)
+		/*public static CoordRect HeightAlignedPixelRect (this Terrain terrain, Vector2D worldPos, Vector2D worldSize, TerrainControlType controlType)
 		/// Returns non-heightmap rect. It's size perfectly corresponds with height resolution (if it's twice smaller - the rect size will always be twice smaller)
 		{
 			int splatsResolution = GetResolution(terrain, controlType);
@@ -94,7 +94,7 @@ namespace Den.Tools
 
 			CoordRect heightRect = PixelRect(terrain, worldPos, worldSize, TerrainControlType.Height);
 			return heightRect * ratio;
-		}
+		}*/
 
 
 		public static float HeightAlignedRatio (int heightResolution, int splatsResolution)
@@ -191,7 +191,6 @@ namespace Den.Tools
 		public static TerrainData Copy (this TerrainData src)
 		{
 			TerrainData dst = new TerrainData();
-			dst.size = src.size;
 
 			dst.heightmapResolution = src.heightmapResolution;
 			dst.SetHeights(0,0, src.GetHeights(0,0,src.heightmapResolution,src.heightmapResolution));
@@ -208,6 +207,8 @@ namespace Den.Tools
 
 			dst.treePrototypes = src.treePrototypes;
 			dst.treeInstances = src.treeInstances;
+
+			dst.size = src.size; //after changing all resolutions
 			
 			return dst;
 		}

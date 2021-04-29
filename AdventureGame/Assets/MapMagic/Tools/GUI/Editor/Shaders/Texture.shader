@@ -84,6 +84,7 @@
 				o.worldPosition = v.vertex;
 				o.vertex = UnityObjectToClipPos(o.worldPosition);
 				o.texcoord = v.texcoord; //TRANSFORM_TEX(v.texcoord, _MainTex);
+				o.color = (0,0,0,0);
 
 				////clipping matrix
 				////float3 eyePos = UnityObjectToViewPos(v.vertex);

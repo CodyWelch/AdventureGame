@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using Den.Tools.Matrices;
+using Den.Tools.Matrices;
 
 namespace Den.Tools
 {
@@ -72,8 +72,68 @@ namespace Den.Tools
 				return resultTex;
 			}
 
+			static public Texture2D ResizedClone (this Texture2D tex, int newWidth, int newHeight)
+			/// Texture should be be readable and not compressed
+			{
+				Texture2D newTex = new Texture2D(newWidth, newHeight, TextureFormat.ARGB32, true, linear:tex.IsLinear()); //has to be ARGB32 to set pixels
+				newTex.name = tex.name;
+
+				Color[] pixels = tex.GetPixels();
+				pixels = pixels.ResizeColorArray(tex.width, tex.height, newWidth, newHeight);
+				newTex.SetPixels(pixels);
+
+				newTex.Apply(updateMipmaps:true);
+				return newTex;
+			}
 
 
+			public static Color[] ResizeColorArray (this Color[] srcColors, int oldWidth, int oldHeight, int newWidth, int newHeight)
+			/// Helper for GetPixelsResize
+			{
+				Color[] dstColors = new Color[newWidth*newHeight];
+
+				Matrix src = new Matrix( new CoordRect(0,0,oldWidth, oldHeight) ); 
+				Matrix dst = new Matrix( new CoordRect(0,0, newWidth, newHeight) ); 
+
+				//reds
+				for (int i=0; i<srcColors.Length; i++) 
+					src.arr[i] = srcColors[i].r;
+
+				MatrixOps.Resize(src, dst);
+
+				for (int i=0; i<dstColors.Length; i++) 
+					dstColors[i].r = dst.arr[i];
+
+				//greens
+				for (int i=0; i<srcColors.Length; i++) 
+					src.arr[i] = srcColors[i].g;
+
+				MatrixOps.Resize(src, dst);
+
+				for (int i=0; i<dstColors.Length; i++) 
+					dstColors[i].g = dst.arr[i];
+
+				//blues
+				//when I was arrested I was dressed in black they put me on a train and they took me back
+				for (int i=0; i<srcColors.Length; i++) 
+					src.arr[i] = srcColors[i].b;
+
+				MatrixOps.Resize(src, dst);
+
+				for (int i=0; i<dstColors.Length; i++) 
+					dstColors[i].b = dst.arr[i];
+
+				//alphas
+				for (int i=0; i<srcColors.Length; i++) 
+					src.arr[i] = srcColors[i].a;
+
+				MatrixOps.Resize(src, dst);
+
+				for (int i=0; i<dstColors.Length; i++) 
+					dstColors[i].a = dst.arr[i];
+
+				return dstColors;
+			}
 
 
 			public static Texture2D ColorTexture (int width, int height, Color color, bool linear=false)

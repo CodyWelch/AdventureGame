@@ -1,44 +1,47 @@
 ﻿using UnityEngine;
 
-public class CharacterStats : MonoBehaviour
+namespace myRPG
 {
-    public int maxHealth = 100;
-    public int currentHealth { get; private set; }
-
-    public Stat damage;
-    public Stat armor;
-    public int experience;
-
-    private void Awake()
+    public class CharacterStats : MonoBehaviour
     {
-        currentHealth = maxHealth;
-    }
+        public int maxHealth = 100;
+        public int currentHealth { get; private set; }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.T))
+        public Stat damage;
+        public Stat armor;
+        public int experience;
+
+        private void Awake()
         {
-            TakeDamage(10);
+            currentHealth = maxHealth;
         }
-    }
 
-
-    public void TakeDamage(int damage)
-    {
-        damage -= armor.GetValue();
-        damage = Mathf.Clamp(damage, 0, int.MaxValue);
-        currentHealth -= damage;
-
-        Debug.Log(transform.name + " takes " + damage + " damage.");
-
-        if(currentHealth <= 0)
+        private void Update()
         {
-            Die();
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                TakeDamage(10);
+            }
         }
-    }
 
-    public virtual void Die()
-    {
-        // die in some way
+
+        public void TakeDamage(int damage)
+        {
+            damage -= armor.GetValue();
+            damage = Mathf.Clamp(damage, 0, int.MaxValue);
+            currentHealth -= damage;
+
+            Debug.Log(transform.name + " takes " + damage + " damage.");
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+        }
+
+        public virtual void Die()
+        {
+            // die in some way
+        }
     }
 }

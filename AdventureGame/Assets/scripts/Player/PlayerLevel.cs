@@ -3,38 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerLevel : MonoBehaviour
+namespace myRPG
 {
-    public int Level { get; set; }
-    public int CurrentExperience { get; set; }
-    public int RequiredExperience { get { return Level * 25; } }
-    public PlayerLevel playerLevel { get; set; }
 
-
-    // Use this for initialization
-    void Start()
+    public class PlayerLevel : MonoBehaviour
     {
-        CombatEvents.OnEnemyDeath += EnemyToExperience;
-        Level = 1;    
-    }
+        public int Level { get; set; }
+        public int CurrentExperience { get; set; }
+        public int RequiredExperience { get { return Level * 25; } }
+        public PlayerLevel playerLevel { get; set; }
 
-    public void EnemyToExperience(CharacterStats enemyStats)
-    {
-       GrantExperience(enemyStats.experience);
-    }
 
-    public void GrantExperience(int amount)
-    {
-        CurrentExperience += amount;
-        while(CurrentExperience >= RequiredExperience)
+        // Use this for initialization
+        void Start()
         {
-            CurrentExperience -= RequiredExperience;
-            Level++;
+            CombatEvents.OnEnemyDeath += EnemyToExperience;
+            Level = 1;
         }
-       UIEventHandler.PlayerLevelChanged();
+
+        public void EnemyToExperience(CharacterStats enemyStats)
+        {
+            GrantExperience(enemyStats.experience);
+        }
+
+        public void GrantExperience(int amount)
+        {
+            CurrentExperience += amount;
+            while (CurrentExperience >= RequiredExperience)
+            {
+                CurrentExperience -= RequiredExperience;
+                Level++;
+            }
+            UIEventHandler.PlayerLevelChanged();
+        }
+
+
+
+
     }
-
-
-
 
 }
+

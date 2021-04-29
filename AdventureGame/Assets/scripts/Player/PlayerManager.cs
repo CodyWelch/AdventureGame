@@ -3,36 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//[RequireComponent]
-public class PlayerManager : MonoBehaviour
+namespace myRPG
 {
-    #region Singleton
-    public static PlayerManager instance;
 
-    void Awake()
+    //[RequireComponent]
+    public class PlayerManager : MonoBehaviour
     {
-        instance = this;
-    }
+        #region Singleton
+        public static PlayerManager instance;
 
-    #endregion
+        void Awake()
+        {
+            instance = this;
+        }
 
-    public GameObject player;
+        #endregion
 
-    public CharacterStats characterStats;
-    public int currentHealth;
-    public int maxHealth;
-    public PlayerLevel PlayerLevel { get; set; }
+        public GameObject player;
 
-    private void Start()
-    {
-        PlayerLevel = GetComponent<PlayerLevel>();
-      this.currentHealth= this.maxHealth;
-//        characterStats = new CharacterStats(10, 10, 10);
-    }
+        public CharacterStats characterStats;
+        public int currentHealth;
+        public int maxHealth;
+        public PlayerLevel PlayerLevel { get; set; }
 
-    public void KillPlayer()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        private void Start()
+        {
+            PlayerLevel = GetComponent<PlayerLevel>();
+            this.currentHealth = this.maxHealth;
+            //        characterStats = new CharacterStats(10, 10, 10);
+        }
+
+        public void KillPlayer()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
+
+
 

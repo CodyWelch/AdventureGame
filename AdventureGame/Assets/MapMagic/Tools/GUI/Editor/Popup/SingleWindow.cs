@@ -83,13 +83,6 @@ namespace Den.Tools.GUI.Popup
 				using (Cell.RowPx(width))
 					DrawMenu(openedItems[p], p);
 
-			//debug shading
-			if (debug)
-			{
-				UnityEditor.EditorGUI.DrawRect(new Rect(0,0,-targetScroll,height), new Color(0,0,0,0.5f));
-				UnityEditor.EditorGUI.DrawRect(new Rect(-targetScroll+width,0,width*5,height), new Color(0,0,0,0.5f));
-			}
-
 			//refreshing selection frame
 			this.editorWindow.Repaint();
 		}
@@ -208,10 +201,7 @@ namespace Den.Tools.GUI.Popup
 								deepness = itemDeepness + 1;
 							}
 							if (clicked && currItem.onClick != null)
-							{
 								currItem.onClick();
-								editorWindow.Close();
-							}
 
 							if (clicked && currItem.closeOnClick)
 								editorWindow.Close();

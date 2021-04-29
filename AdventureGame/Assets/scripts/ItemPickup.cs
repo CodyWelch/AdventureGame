@@ -1,21 +1,25 @@
 ﻿using UnityEngine;
 
-public class ItemPickup : Interactable
-{
-    public Item item;
+namespace myRPG
+{ 
 
-    public override void Interact()
+    public class ItemPickup : Interactable
     {
-        base.Interact();
-        Debug.Log("made a change");
-        Pickup();
-    }
+        public Item item;
 
-    void Pickup()
-    {
-        Debug.Log("Picking up " + item.name);
-        bool wasPickedUp = Inventory.instance.Add(item);
-        if (wasPickedUp)
-            Destroy(this.gameObject);
+        public override void Interact()
+        {
+            base.Interact();
+            Debug.Log("made a change");
+            Pickup();
+        }
+
+        void Pickup()
+        {
+            Debug.Log("Picking up " + item.name);
+            bool wasPickedUp = Inventory.instance.Add(item);
+            if (wasPickedUp)
+                Destroy(this.gameObject);
+        }
     }
 }

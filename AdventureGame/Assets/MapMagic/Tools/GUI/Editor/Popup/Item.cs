@@ -64,7 +64,7 @@ namespace Den.Tools.GUI.Popup
 		public static void SortItems (List<Item> items) { items.Sort(Compare); }
 		public static int Compare (Item a, Item b)
 		{
-			if (a.priority != b.priority) return a.priority - b.priority; //b.priority - a.priority; //priority is inverted in MM1 menu
+			if (a.priority != b.priority) return b.priority - a.priority;
 
 			if (a.name==null || b.name==null) return 0;
 			if (a.name.Length==0) return -1; if (b.name.Length==0) return 1;

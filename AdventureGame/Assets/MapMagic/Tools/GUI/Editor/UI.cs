@@ -164,11 +164,17 @@ namespace Den.Tools.GUI
 				this.isInspector = inInspector;
 
 				//scroll/zoom
-				if (scrollZoom != null  &&  !Event.current.alt)  //just because alt rotates 'scene view in graph'
+				if (scrollZoom != null)  //just because alt rotates 'scene view in graph'
 				{
-					scrollZoom.Scroll();
-					scrollZoom.Zoom();
+					#if MM_DEBUG
+					if (!Event.current.alt)
+					#endif
+					{
+						scrollZoom.Scroll();
+						scrollZoom.Zoom();
+					}
 				}
+				
 				
 
 				//styles

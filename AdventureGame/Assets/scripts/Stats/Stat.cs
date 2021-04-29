@@ -2,35 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Stat
+namespace myRPG
 {
-    [SerializeField]
-    private int baseValue;
-
-    private List<int> modifiers = new List<int>();
-
-    private void Awake()
+    [System.Serializable]
+    public class Stat
     {
-        baseValue = 0;
-    }
+        [SerializeField]
+        private int baseValue;
 
-    public int GetValue()
-    {
-        int finalValue = baseValue;
-        modifiers.ForEach(x => finalValue += x);
-        return finalValue;
-    }
+        private List<int> modifiers = new List<int>();
 
-    public void AddModifier(int modifier)
-    {
-        if (modifier != 0)
-            modifiers.Add(modifier);
-    }
+        private void Awake()
+        {
+            baseValue = 0;
+        }
 
-    public void RemoveModifier(int modifier)
-    {
-        if (modifier != 0)
-            modifiers.Remove(modifier);
+        public int GetValue()
+        {
+            int finalValue = baseValue;
+            modifiers.ForEach(x => finalValue += x);
+            return finalValue;
+        }
+
+        public void AddModifier(int modifier)
+        {
+            if (modifier != 0)
+                modifiers.Add(modifier);
+        }
+
+        public void RemoveModifier(int modifier)
+        {
+            if (modifier != 0)
+                modifiers.Remove(modifier);
+        }
     }
 }
+
+

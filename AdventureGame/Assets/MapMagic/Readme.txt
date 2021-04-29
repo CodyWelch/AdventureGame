@@ -1,13 +1,13 @@
-MapMagic World Generator
+MapMagic 2 World Generator
 A node based infinite land generator
 
 The manual could be found here:
 https://gitlab.com/denispahunov/mapmagic/wikis/home
 
 Quick start guide:
-- Open the empty scene
-- Create MapMagic object (GameObject menu -> 3D Object-> MapMagic)
-- Select MapMagic object and press Show Editor in the Inspector
+- Create the new MapMagic Graph asset by clicking Create in a Project View, and select MapMagic -> Template Graph
+- Drag and drop the created Graph to scene
+- Double-click on the Graph asset in the project view to open up the editor window (or select MapMagic object and press Open next to graph slot)
 - In Editor Window use:
   - middle button to pan (or Alt+right button)
   - mouse wheel to zoom (or keyboard shift and "=" or "-")
