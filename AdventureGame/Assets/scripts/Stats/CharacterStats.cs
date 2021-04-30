@@ -11,6 +11,8 @@ namespace myRPG
         public Stat armor;
         public int experience;
 
+        public event System.Action<int, int> OnHealthChanged;
+
         private void Awake()
         {
             currentHealth = maxHealth;
@@ -33,6 +35,10 @@ namespace myRPG
 
             Debug.Log(transform.name + " takes " + damage + " damage.");
 
+            if(OnHealthChanged != null)
+            {
+                OnHealthChanged(maxHealth, currentHealth);
+            }
             if (currentHealth <= 0)
             {
                 Die();
