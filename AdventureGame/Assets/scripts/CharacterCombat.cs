@@ -18,6 +18,7 @@ namespace myRPG
         public event System.Action OnAttack;
 
         CharacterStats myStats;
+        CharacterStats opponentStats;
 
         void Start()
         {
@@ -33,7 +34,32 @@ namespace myRPG
             }
         }
 
+
         public void Attack(CharacterStats targetStats)
+        {
+            if (attackCooldown <= 0f)
+            {
+                opponentStats = targetStats;
+                if (OnAttack != null)
+                    OnAttack();
+
+                attackCooldown = 1f / attackSpeed;
+                InCombat = true;
+                lastAttackTime = Time.time;
+            }
+
+        }
+
+        public void AttackHit_AnimationEvent()
+        {
+            opponentStats.TakeDamage(myStats.damage.GetValue());
+            if (opponentStats.currentHealth <= 0)
+            {
+                InCombat = false;
+            }
+        }
+        /*
+         * public void Attack(CharacterStats targetStats)
         {
             if (attackCooldown <= 0f)
             {
@@ -59,5 +85,6 @@ namespace myRPG
                 InCombat = false;
             }
         }
+        */
     }
 }

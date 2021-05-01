@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 0}
   isDefaultItem: 1
   equipSlot: 1
-  mesh: {fileID: 4585362125820420220, guid: d2aa058ceed55d54bb7874987d917b76, type: 3}
+  mesh: {fileID: 605819232172604895, guid: 2ebfe92fef5728b4592bc442ae30a9f6, type: 3}
   coveredMeshRegions: 0200000001000000
   armorModifier: 0
   damageModifier: 0

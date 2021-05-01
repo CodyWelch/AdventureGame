@@ -22,6 +22,9 @@ namespace myRPG
         Equipment[] currentEquipment;
         SkinnedMeshRenderer[] currentMeshes;
 
+        public Transform Sword;
+        public Transform Shield;
+
         public delegate void OnEquipmentChanged(Equipment newItem, Equipment oldItem);
         public OnEquipmentChanged onEquipmentChanged;
         Inventory inventory;
@@ -35,6 +38,7 @@ namespace myRPG
             currentMeshes = new SkinnedMeshRenderer[numSlots];
 
             EquipDefaultItems();
+
         }
 
         public void Equip(Equipment newItem)
@@ -44,17 +48,37 @@ namespace myRPG
 
             if (onEquipmentChanged != null)
             {
-                onEquipmentChanged.Invoke(newItem, oldItem);
+                onEquipmentChanged.Invoke(newItem, null);
             }
             SetEquipmentBlendShapes(newItem, 100);
 
             currentEquipment[slotIndex] = newItem;
             SkinnedMeshRenderer newMesh = Instantiate<SkinnedMeshRenderer>(newItem.mesh);
-            newMesh.transform.parent = targetMesh.transform;
+            //newMesh.transform.parent = targetMesh.transform;
 
-            newMesh.bones = targetMesh.bones;
+            /*newMesh.bones = targetMesh.bones;
             newMesh.rootBone = targetMesh.rootBone;
             currentMeshes[slotIndex] = newMesh;
+
+            SetEquipmentBlendShapes(newItem, 100);
+            currentEquipment[slotIndex] = newItem;
+            */
+            currentMeshes[slotIndex] = newMesh;
+
+            if (newItem != null && newItem.equipSlot == EquipmentSlot.Weapon)
+            {
+                newMesh.rootBone = Sword;
+            }
+            else if (newItem != null && newItem.equipSlot == EquipmentSlot.Shield)
+            {
+                newMesh.rootBone = Shield;
+            }
+            else
+            {
+                newMesh.transform.parent = targetMesh.transform;
+                newMesh.bones = targetMesh.bones;
+                newMesh.rootBone = targetMesh.rootBone;
+            }
         }
 
         public Equipment Unequip(int slotIndex)

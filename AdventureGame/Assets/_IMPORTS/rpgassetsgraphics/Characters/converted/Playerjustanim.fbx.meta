@@ -1,11 +1,38 @@
 fileFormatVersion: 2
-guid: b96f12f6108ae4c7c830b53377f99e6c
+guid: 632f97920087fc24d93d3dd16da525aa
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: -623603649343465320
-    second: Scene
+      74: 1882377834704583646
+    second: Armature|Combat_idle
+  - first:
+      74: 1436691875045797791
+    second: Armature|Grip left
+  - first:
+      74: 3393377214530012804
+    second: Armature|Grip right
+  - first:
+      74: -8945691123924629249
+    second: Armature|Idle
+  - first:
+      74: 7549088838577149333
+    second: Armature|Punch
+  - first:
+      74: -7551964380084998518
+    second: Armature|Run
+  - first:
+      74: -7795385134082868115
+    second: Armature|Sword_atk01
+  - first:
+      74: -3699909073461682349
+    second: Armature|Sword_atk02
+  - first:
+      74: 8349542763059015795
+    second: Armature|Walk
+  - first:
+      74: -4377251739926557069
+    second: Body|Grip left
   externalObjects: {}
   materials:
     materialImportMode: 1
