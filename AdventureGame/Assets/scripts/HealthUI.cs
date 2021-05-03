@@ -45,7 +45,7 @@ namespace myRPG
                 ui.gameObject.SetActive(true);
                 lastMadeVisibleTime = Time.time;
 
-                float healthPercent = (float)currentHealth / maxHealth;
+                float healthPercent = currentHealth / (float)maxHealth;
                 healthSlider.fillAmount = healthPercent;
                 if (currentHealth <= 0)
                 {

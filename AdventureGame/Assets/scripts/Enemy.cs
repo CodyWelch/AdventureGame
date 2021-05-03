@@ -24,11 +24,29 @@ namespace myRPG
         public override void Interact()
         {
             base.Interact();
-            CharacterCombat playerCombat = playerManager.player.GetComponent<CharacterCombat>();
-            if (playerCombat != null)
+            int maxPlayers = 3;
+            CharacterCombat[] playerCombats = new CharacterCombat[maxPlayers];
+            int i = 0;
+            foreach(GameObject player in playerManager.players)
+            {
+                playerCombats[i] = player.GetComponent<CharacterCombat>();
+                i++;
+            }
+
+            // single player
+            //CharacterCombat playerCombat = playerManager.player.GetComponent<CharacterCombat>();
+            foreach (CharacterCombat playerCombat in playerCombats)
+            {
+                if (playerCombat != null)
+                {
+                    playerCombat.Attack(myStats);
+                }
+            }
+            // single player
+           /* if (playerCombat != null)
             {
                 playerCombat.Attack(myStats);
-            }
+            }*/
 
             // attack the enemy
         }

@@ -19,7 +19,7 @@ namespace myRPG
 
         #endregion
 
-        public GameObject player;
+        public GameObject[] players;
 
         public CharacterStats characterStats;
         public int currentHealth;

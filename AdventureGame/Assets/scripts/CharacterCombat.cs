@@ -27,29 +27,72 @@ namespace myRPG
 
         void Update()
         {
+            if(opponentStats!= null)
+            {
+                if(opponentStats.currentHealth>=0)
+                {
+                    Attack(opponentStats);
+                }
+            }
             attackCooldown -= Time.deltaTime;
             if(Time.time - lastAttackTime > combatCooldown)
             {
                 InCombat = false;
             }
+
         }
 
 
-        public void Attack(CharacterStats targetStats)
+        public void FollowEnemy()
         {
-            if (attackCooldown <= 0f)
-            {
-                opponentStats = targetStats;
-                if (OnAttack != null)
-                    OnAttack();
 
-                attackCooldown = 1f / attackSpeed;
-                InCombat = true;
-                lastAttackTime = Time.time;
-            }
+            /*this.playerAgent = playerAgent;
+            playerAgent.stoppingDistance = 2f;
+            playerAgent.destination = this.transform.position;
+
+            Interact();*/
+        }
+
+        // new attack method for animation events
+        public void Target(CharacterStats targetStats)
+        {
+          opponentStats = targetStats;
 
         }
 
+        // new attack method for animation events
+        public void Attack(CharacterStats targetStats)
+          {
+
+
+              if (attackCooldown <= 0f)
+              {
+                  opponentStats = targetStats;
+                  if (OnAttack != null)
+                      OnAttack();
+
+                  attackCooldown = 1f / attackSpeed;
+                  InCombat = true;
+                  lastAttackTime = Time.time;
+              }
+
+          }
+          
+
+        // Made obsolete my AnimationEvent
+        /*IEnumerator DoDamage(CharacterStats stats, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+
+            stats.TakeDamage(myStats.damage.GetValue());
+            if (stats.currentHealth <= 0)
+            {
+                InCombat = false;
+            }
+        }*/
+
+            // Replaces DoDamage
+            // Updates damage based on timing of animation
         public void AttackHit_AnimationEvent()
         {
             opponentStats.TakeDamage(myStats.damage.GetValue());
@@ -58,8 +101,9 @@ namespace myRPG
                 InCombat = false;
             }
         }
-        /*
-         * public void Attack(CharacterStats targetStats)
+        
+        //old attack method 
+    /*   public void Attack(CharacterStats targetStats)
         {
             if (attackCooldown <= 0f)
             {
@@ -68,23 +112,14 @@ namespace myRPG
                 if (OnAttack != null)
                     OnAttack();
 
-                // targetStats.T akeDamage(myStats.damage.GetValue());
+                targetStats.TakeDamage(myStats.damage.GetValue());
                 attackCooldown = 1f / attackSpeed;
                 InCombat = true;
                 lastAttackTime = Time.time;
             }
-        }
+        }*/
 
-        IEnumerator DoDamage(CharacterStats stats, float delay)
-        {
-            yield return new WaitForSeconds(delay);
 
-            stats.TakeDamage(myStats.damage.GetValue());
-            if(stats.currentHealth <= 0)
-            {
-                InCombat = false;
-            }
-        }
-        */
+        
     }
 }
