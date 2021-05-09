@@ -8,6 +8,9 @@ public class PlayerMotor : MonoBehaviour
 {
     NavMeshAgent agent;
 
+    public bool bMainPlayer;
+    public GameObject mainPlayer;
+
     Transform target;
     void Start()
     {
@@ -15,10 +18,24 @@ public class PlayerMotor : MonoBehaviour
     }
      void Update()
     {
-        if(target != null)
+        if (bMainPlayer)
         {
-            agent.SetDestination(target.position);
-            FaceTarget();
+
+            if (target != null)
+            {
+                agent.stoppingDistance = 0f;
+                agent.SetDestination(target.position);
+                FaceTarget();
+            }
+        }
+        else
+        {
+            // follow player
+            agent.stoppingDistance= 4f;
+            agent.SetDestination(mainPlayer.transform.position);
+            //FaceTarget();
+            // detect target
+
         }
     }
 
