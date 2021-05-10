@@ -23,9 +23,14 @@ public class PlayerMotor : MonoBehaviour
 
             if (target != null)
             {
-                agent.stoppingDistance = 0f;
+                agent.stoppingDistance = 3f;
                 agent.SetDestination(target.position);
                 FaceTarget();
+            }
+            else
+            {
+                agent.stoppingDistance = 3f;
+
             }
         }
         else
