@@ -16,6 +16,7 @@ namespace myRPG
         public LayerMask movementMask;
         public bool isActive;
         public Quest quest;
+        public bool bMainPlayer;
 
         void Start()
         {
@@ -24,38 +25,48 @@ namespace myRPG
             isActive = false;
         }
 
+        public void SetMainPlayer(bool setActive, GameObject mainPlayer)
+        {
+            bMainPlayer = setActive;
+            motor.SetMainPlayer(setActive,mainPlayer);
+        }
+
         void Update()
         {
-            // stop player from moving when using inventory
-            if (EventSystem.current.IsPointerOverGameObject())
-                return;
-
-            if (Input.GetMouseButtonDown(0))
+            if (bMainPlayer)
             {
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit, 100, movementMask))
+                // stop player from moving when using inventory
+                if (EventSystem.current.IsPointerOverGameObject())
+                    return;
+
+                if (Input.GetMouseButtonDown(0))
                 {
-                    motor.MoveToPoint(hit.point);
-                    //                agent.SetDestination(hit.point);'
-                    RemoveFocus();
+                    Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
 
-                }
-            }
-
-            if (Input.GetMouseButtonDown(1))
-            {
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-
-                if (Physics.Raycast(ray, out hit, 100))
-                {
-                    // check if interactable
-                    Interactable interactable = hit.collider.GetComponent<Interactable>();
-                    if (interactable != null)
+                    if (Physics.Raycast(ray, out hit, 100, movementMask))
                     {
-                        SetFocus(interactable);
+                        motor.MoveToPoint(hit.point);
+                        //                agent.SetDestination(hit.point);'
+                        RemoveFocus();
+
+                    }
+                }
+
+                if (Input.GetMouseButtonDown(1))
+                {
+                    Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+
+                    if (Physics.Raycast(ray, out hit, 100))
+                    {
+                        // check if interactable
+                        Interactable interactable = hit.collider.GetComponent<Interactable>();
+                        if (interactable != null)
+                        {
+                            SetFocus(interactable);
+                        }
                     }
                 }
             }

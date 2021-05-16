@@ -37,6 +37,38 @@ namespace myRPG
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        public void Update()
+        {
+            if (Input.GetKeyDown("1"))
+            {
+                SetPlayerActive(0);
+            }
+            if (Input.GetKeyDown("2"))
+            {
+                SetPlayerActive(1);
+            }
+            if (Input.GetKeyDown("3"))
+            {
+                SetPlayerActive(2);
+            }
+        }
+
+        public void SetPlayerActive(int playerIndex)
+        {
+            for(int i=0; i<players.Length; i++)
+            {
+                if (i == playerIndex)
+                {
+                    Debug.Log("Set " + i + " active");
+                    players[i].GetComponent<PlayerController>().SetMainPlayer(true,players[playerIndex]);
+                }
+                else
+                {
+                    players[i].GetComponent<PlayerController>().SetMainPlayer(false,players[playerIndex]);
+                }
+            }
+        }
     }
 }
 

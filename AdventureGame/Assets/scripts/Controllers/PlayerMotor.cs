@@ -44,6 +44,12 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
+    public void SetMainPlayer(bool setActive,GameObject newMainPlayer)
+    {
+        bMainPlayer = setActive;
+        mainPlayer = newMainPlayer;
+    }
+
     public void MoveToPoint (Vector3 point)
     {
         agent.SetDestination(point);
