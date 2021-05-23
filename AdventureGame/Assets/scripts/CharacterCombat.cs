@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace myRPG
 {
@@ -11,18 +12,26 @@ namespace myRPG
         private float attackCooldown = 0f;
         const float combatCooldown = 5;
         float lastAttackTime;
+        float combatDistance = 10.0f;
 
         public float attackDelay = 0.6f;
 
         public bool InCombat { get; private set; }
         public event System.Action OnAttack;
+        public float attackRange;
 
         CharacterStats myStats;
         CharacterStats opponentStats;
+        NavMeshAgent agent;
+        PlayerController controller;
+        EnemyManager enemyManager;
 
         void Start()
         {
+            enemyManager = EnemyManager.instance;
             myStats = GetComponent<CharacterStats>();
+            agent = GetComponent<NavMeshAgent>();
+            controller = GetComponent<PlayerController>();
         }
 
         void Update()
@@ -42,7 +51,6 @@ namespace myRPG
 
         }
 
-
         public void FollowEnemy()
         {
 
@@ -51,6 +59,19 @@ namespace myRPG
             playerAgent.destination = this.transform.position;
 
             Interact();*/
+        }
+        void OnDrawGizmos()
+        {
+            foreach (GameObject enemy in enemyManager.enemies)
+            {
+
+                if (Vector3.Distance(enemy.transform.position, this.transform.position) < combatDistance)
+                {
+                    // Draws a blue line from this transform to the target
+                    Gizmos.color = Color.blue;
+                    Gizmos.DrawLine(this.gameObject.transform.position, enemy.transform.position);
+                }
+            }
         }
 
         // new attack method for animation events
@@ -63,21 +84,31 @@ namespace myRPG
         // new attack method for animation events
         public void Attack(CharacterStats targetStats)
           {
+            foreach(GameObject enemy in enemyManager.enemies)
+            {
+                  
 
+                if (Vector3.Distance(targetStats.transform.position, this.transform.position) < combatDistance)
+                {
+                    InCombat = true;
+                    if (agent.remainingDistance <= agent.stoppingDistance)
+                    {
+                        if (Vector3.Distance(targetStats.transform.position, this.transform.position) < attackRange)
+                        {
+                            if (attackCooldown <= 0f)
+                            {
+                                opponentStats = targetStats;
+                                if (OnAttack != null)
+                                    OnAttack();
 
-              if (attackCooldown <= 0f)
-              {
-                  opponentStats = targetStats;
-                  if (OnAttack != null)
-                      OnAttack();
-
-                  attackCooldown = 1f / attackSpeed;
-                  InCombat = true;
-                  lastAttackTime = Time.time;
-              }
-
+                                attackCooldown = 1f / attackSpeed;
+                                lastAttackTime = Time.time;
+                            }
+                        }
+                    }
+                }
+            }
           }
-          
 
         // Made obsolete my AnimationEvent
         /*IEnumerator DoDamage(CharacterStats stats, float delay)

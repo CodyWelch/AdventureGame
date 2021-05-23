@@ -25,20 +25,26 @@ namespace myRPG
         // Update is called once per frame
         void Update()
         {
-            float distance = Vector3.Distance(target.position, transform.position);
-
-            if (distance <= lookRadius)
+            foreach(GameObject player in PlayerManager.instance.players)
             {
-                agent.SetDestination(target.position);
+                //target = PlayerManager.instance.players[0].transform;
+                target = player.transform;
 
-                if (distance <= agent.stoppingDistance)
+                float distance = Vector3.Distance(target.position, transform.position);
+
+                if (distance <= lookRadius)
                 {
-                    CharacterStats targetStats = target.GetComponent<CharacterStats>();
-                    if (targetStats != null)
+                    agent.SetDestination(target.position);
+
+                    if (distance <= agent.stoppingDistance)
                     {
-                        combat.Attack(targetStats);
+                        CharacterStats targetStats = target.GetComponent<CharacterStats>();
+                        if (targetStats != null)
+                        {
+                            combat.Attack(targetStats);
+                        }
+                        FaceTarget();
                     }
-                    FaceTarget();
                 }
             }
         }

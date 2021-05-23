@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 namespace myRPG
 {
@@ -18,9 +20,11 @@ namespace myRPG
         }
 
         #endregion
-
+        
         public GameObject[] players;
 
+        [SerializeField]
+        private GameObject[] nameUI;
         public CharacterStats characterStats;
         public int currentHealth;
         public int maxHealth;
@@ -31,6 +35,21 @@ namespace myRPG
             PlayerLevel = GetComponent<PlayerLevel>();
             this.currentHealth = this.maxHealth;
             //        characterStats = new CharacterStats(10, 10, 10);
+            int index = 0;
+            if(players.Length==nameUI.Length)
+            {
+                foreach (GameObject player in players)
+                {
+                    nameUI[index].GetComponent<TextMeshProUGUI>().text = player.GetComponent<PlayerController>().GetPlayerName();
+                    index++;
+                }
+            }
+            else
+            {
+                Debug.Log("wrong");
+
+            }
+
         }
 
         public void KillPlayer()
@@ -62,6 +81,7 @@ namespace myRPG
                 {
                     Debug.Log("Set " + i + " active");
                     players[i].GetComponent<PlayerController>().SetMainPlayer(true,players[playerIndex]);
+
                 }
                 else
                 {

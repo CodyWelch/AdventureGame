@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class PlayerMotor : MonoBehaviour
 {
     NavMeshAgent agent;
+    Animator animator;
 
     public bool bMainPlayer;
     public GameObject mainPlayer;
@@ -15,31 +16,49 @@ public class PlayerMotor : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-    }
-     void Update()
-    {
-        if (bMainPlayer)
-        {
+        animator = GetComponentInChildren<Animator>();
 
-            if (target != null)
+    }
+
+    void Update()
+    {
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
+        {
+            if (bMainPlayer)
             {
-                agent.stoppingDistance = 3f;
-                agent.SetDestination(target.position);
-                FaceTarget();
+
+                if (target != null)
+                {
+                    agent.stoppingDistance = 1f;
+                    agent.SetDestination(target.position);
+                    FaceTarget();
+                }
+                else
+                {
+                    agent.stoppingDistance = 1f;
+
+                }
             }
             else
             {
-                agent.stoppingDistance = 3f;
+                if (target != null)
+                {
+                    agent.stoppingDistance = 1f;
+                    agent.SetDestination(target.position);
+                    FaceTarget();
+                }
+                else
+                {
+                    // follow player
+                    agent.stoppingDistance = 4f;
+                    agent.SetDestination(mainPlayer.transform.position);
+                    //FaceTarget();
+                    // detect target
 
+                }
             }
-        }
-        else
-        {
-            // follow player
-            agent.stoppingDistance= 4f;
-            agent.SetDestination(mainPlayer.transform.position);
-            //FaceTarget();
-            // detect target
+ 
+
 
         }
     }

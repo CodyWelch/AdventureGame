@@ -18,11 +18,19 @@ namespace myRPG
         public Quest quest;
         public bool bMainPlayer;
 
+        [SerializeField]
+        private string playerName;
+
         void Start()
         {
             motor = GetComponent<PlayerMotor>();
             cam = Camera.main;
             isActive = false;
+        }
+
+        public string GetPlayerName()
+        {
+            return playerName;
         }
 
         public void SetMainPlayer(bool setActive, GameObject mainPlayer)
