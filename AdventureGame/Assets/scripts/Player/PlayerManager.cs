@@ -52,6 +52,8 @@ namespace myRPG
 
         }
 
+
+
         public void KillPlayer()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

@@ -69,8 +69,10 @@ namespace myRPG
 
                     if (Physics.Raycast(ray, out hit, 100))
                     {
+                        Debug.Log("hit " + hit.transform.name);
                         // check if interactable
                         Interactable interactable = hit.collider.GetComponent<Interactable>();
+                        
                         if (interactable != null)
                         {
                             SetFocus(interactable);

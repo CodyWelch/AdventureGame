@@ -13,10 +13,11 @@ namespace myRPG
         public GameObject uiPrefab;
         public Transform target;
         float visibleTime = 5;
+        public Slider slider;
 
         float lastMadeVisibleTime;
         Transform ui;
-        Image healthSlider;
+        //Image healthSlider;
         Transform cam;
 
         // Use this for initialization
@@ -29,7 +30,8 @@ namespace myRPG
                 if (c.renderMode == RenderMode.WorldSpace)
                 {
                     ui = Instantiate(uiPrefab, c.transform).transform;
-                    healthSlider = ui.GetChild(0).GetComponent<Image>();
+                    slider = ui.GetComponent<Slider>();
+                    //healthSlider = ui.GetChild(0).GetComponent<Image>();
                     ui.gameObject.SetActive(false);
                     break;
                 }
@@ -40,18 +42,32 @@ namespace myRPG
 
         void OnHealthChanged(int maxHealth, int currentHealth)
         {
+            SetMaxHealth(maxHealth);
+
             if (ui != null)
             {
                 ui.gameObject.SetActive(true);
                 lastMadeVisibleTime = Time.time;
 
-                float healthPercent = currentHealth / (float)maxHealth;
-                healthSlider.fillAmount = healthPercent;
+                SetHealth(currentHealth);
+                //float healthPercent = currentHealth / (float)maxHealth;
+                //healthSlider.fillAmount = healthPercent;
                 if (currentHealth <= 0)
                 {
                     Destroy(ui.gameObject);
                 }
             }
+        }
+
+        public void SetMaxHealth(int health)
+        {
+            slider.maxValue = health;
+            slider.value = health;
+        }
+
+        public void SetHealth(int health)
+        {
+            slider.value = health;
         }
 
         void LateUpdate()
